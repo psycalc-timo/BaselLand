@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.1.0",
+      "sem_ver" : "1.0.0",
       "build_uid" : "",
-      "MD5-CAM-1.0.1" : "a1495ff3229bb33cf1e4ae3a322740c0",
+      "MD5-CAM-1.0.1" : "cd63838d100f13a7a0c58f3763bb4e69",
       "PARENT:MD5-CAM-1.0.1" : "F116C050DE9CF44A61E064FEEA0494DE"
     },
     "details" : {
@@ -278,6 +278,13 @@
                 "attributes" : [ ],
                 "attributeTuples" : [ ]
               }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..0",
+                "nodeId" : "at0167.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ]
+              }, {
                 "@type" : "C_ARCHETYPE_ROOT",
                 "rmTypeName" : "CLUSTER",
                 "occurrences" : "0..1",
@@ -390,7 +397,99 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "89BA41E6CD217F7E2639D05A6B02465C"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Darstellung von Details eines Arzneimittels oder einer Komponente eines Arzneimittels, einschließlich der Wirkstärke, der Darreichungsform und den Details über bestimmte Inhaltsstoffe.",
+          "keywords" : [ "Arzneimittel", "Medikament", "Verordnung", "Verschreibung", "Rezept", "ein Rezept ausstellen", "Therapie", "Substanz", "Stoff", "Arznei", "Therapeutikum", "Wirkstoff", "Heilmittel", "ad-hoc", "ad hoc", "Rezeptur", "Zusammensetzung", "Medizin", "Pharmakon" ],
+          "use" : "Zur Darstellung von Angaben zu einem Arzneimittel oder einer Arzneimittelkomponente, einschließlich der Wirkstärke, der Darreichungsform und den Angaben über spezielle Inhaltsstoffe.\r\n\r\nDieser Archetyp soll für die Darstellung von Angaben zu einem Arzneimittel oder einer Arzneimittelkomponente verwendet werden. Dabei sollen vor allem die Darreichungsform und die Inhaltsstoffe detailliert beschrieben werden, z.B. zu einer Infusion oder einer Ad-hoc-Mixtur oder wenn es zu einem Arzneimittel keine Terminologie zur Verfügung steht. Im Rahmen einer Verordnung oder Abgabe eines Arzneimittels kann dieser Archetyp in den SLOT \"Arzneimitteldetails\" innerhalb des INSTRUCTION.medication_order Archetyps eingebettet werden. Für die Darstellung einer gegenwärtigen Verabreichung, Abgabe oder Anwendung eines Arzneimittels muss dieser Archetyp innerhalb des SLOTs \"Arzneimitteldetails\" in den Archetyp ACTION.medication eingefügt werden.\r\n\r\nDieser Archetyp kann überflüssig sein, wenn die Verordnung eines verschreibungsfähigen Arzneimittels eine Terminologie zur Identifizierung des Arzneimittelproduktes verwendet. In diesem Fall kann der Marken- oder Produktname Informationen über die Darreichungsform und die Wirkstärke der Stoffe beinhalten.\r\n",
+          "misuse" : "Nicht für die Kontrolle des Apothekenbestands oder zur Verwaltung von Arzneimittellisten verwenden.\r\n\r\nNicht zur Darstellung einer beabsichtigten oder verabreichten Dosis eines Arzneimittels einsetzen. Für diesen Zweck müssen die Archetypen INSTRUCTION.medication_order oder CLUSTER.dosage verwendet werden.\r\n\r\nDarf nicht allein zum Ausfüllen einer Medikamentenliste verwendet werden. Verwenden Sie dazu einen relevanten medikamentenbezogenen ENTRY-Archetyp wie INSTRUCTION.medication_order oder ACTION.medication.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "För att registrera information om ett läkemedel eller en läkemedelskomponent, inklusive styrka, form och detaljer om någon specifika beståndsdel.",
+          "keywords" : [ "läkemedel", "beställnförskrivning", "terapi", "substans", "drog eller läkemedel", "behandlingsavsikt", "therapeutic good", "ad-hoc", "adhoc", "ad hoc", "*extemporaneous", "läkemedelsform", "farmaceutisk produkt" ],
+          "use" : "*Use to record details about a medication or component of a medication, including strength, form and details of any specific constituents.\r\n\r\nThis archetype is intended to be used to record details of a medication or component of a medication where the form and detailed ingredients of the medication need to be specified in more detail, for example, infusions and ad hoc mixtures, or where there is no medication terminology available. In the context of an order for administration or dispensing of a medication, nest this archetype within the Preparation details SLOT within the INSTRUCTION.medication_order archetype. In the context of recording the actual administration or dispensing or a medication, nest this archetype within the 'Medication details' SLOT within the ACTION.medication archetype.\r\n\r\nThis archetype may be redundant in situations where ordering a medication via prescription uses a terminology to identify the medication item. In that case the brand or product name may identify the form and strength of the substance. (en)",
+          "misuse" : "*Not to be used for pharmacy stock-control or within medication catalogues.\r\n\r\nNot to be used to record the intended or administered dose of a medication. Use either the INSTRUCTION.medication_order or the CLUSTER.dosage archetypes for this purpose.\r\n\r\nNot to be used by itself to populate a medication list. Use a relevant medication-related ENTRY archetype such as INSTRUCTION.medication_order or ACTION.medication for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere detaljer om et legemiddel eller en komponent av et legemiddel, inkludert detaljer om spesifikke bestanddeler.",
+          "keywords" : [ "legemiddel", "tilbereding", "ordinering", "forskrive", "terapi", "substans", "medikament", "terapeutisk", "medikamenter solgt over disk", "vare", "magistrell", "ex tempore", "blanding", "virkestoff", "hjelpestoff", "utblanding", "foreskrive", "forordne" ],
+          "use" : "Brukes for å registrere detaljer om et legemiddel eller en komponent av et legemiddel, inkludert detaljer om spesifikke bestanddeler.\r\n\r\nDenne arketypen er laget for å brukes til å registrere detaljer om et legemiddel eller en komponent av et legemiddel, der formen og detaljer om bestanddelene må oppgis i mer detalj. Eksempler kan være infusjoner og magistrellforskrevne blandinger, eller der det ikke finnes en tilgjengelig legemiddelterminologi. I sammenhenger der et legemiddel skal administreres eller ekspederes skal denne arketypen nøstes i SLOTet Legemiddeldetaljer i arketypen INSTRUCTION.medication_order. I sammenhenger der det skal registreres hvilket legemiddel som faktisk ble administrert eller ekspedert skal denne arketypen nøstes i SLOTet Legemiddeldetaljer i arketypen ACTION.medication.\r\n\r\nDenne arketypen kan være overflødig i situasjoner der en legemiddelordinering via resept bruker terminologi for å spesifisere legemiddelet. I slike tilfeller vil ofte form og styrke være angitt som en del av terminologibegrepet.",
+          "misuse" : "Skal ikke brukes innen varelageroversikt for apotek, eller innen legemiddelkataloger.\r\n\r\nSkal ikke brukes for å registrere den tilsiktede eller administrerte dosen av et legemiddel. Bruk enten INSTRUCTION.medication_order eller CLUSTER.dosage til dette formålet.\r\n\r\nSkal ikke brukes alene for å populere en legemiddelliste. Bruk en relevant legemiddel-relatert ENTRY-arketype som INSTRUCTION.medication_order eller ACTION.medication for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt"
+          },
+          "purpose" : "Para registrar detalhes de uma preparação de medicamentos, incluindo, quando necessário, detalhes de múltiplos ingredientes, no contexto de uma infusão ou preparação ad-hoc (manipulada). A maioria das prescrições baseadas em dose terá sua precisa preparação determinada pelo estoque disponível na unidade, ou pelo fornecimento de farmácia, enquanto que, com a prescrição baseada em produtos, o nome da medicação traz detalhes da forma e concentração da preparação.",
+          "keywords" : [ "medicação", "ordem", "prescrever", "terapia", "substância", "droga", "terapêutico", "venda livre", "ítem terapêutico", "Ad hoc", "manipulados" ],
+          "use" : "*Use to record details about a medication or component of a medication, including strength, form and details of any specific constituents.\r\n\r\nThis archetype is intended to be used to record details of a medication or component of a medication where the form and detailed ingredients of the medication need to be specified in more detail, for example, infusions and ad hoc mixtures, or where there is no medication terminology available. In the context of an order for administration or dispensing of a medication, nest this archetype within the Preparation details SLOT within the INSTRUCTION.medication_order archetype. In the context of recording the actual administration or dispensing or a medication, nest this archetype within the 'Medication details' SLOT within the ACTION.medication archetype.\r\n\r\nThis archetype may be redundant in situations where ordering a medication via prescription uses a terminology to identify the medication item. In that case the brand or product name may identify the form and strength of the substance. (en)",
+          "misuse" : "*Not to be used for pharmacy stock-control or within medication catalogues.\r\n\r\nNot to be used to record the intended or administered dose of a medication. Use either the INSTRUCTION.medication_order or the CLUSTER.dosage archetypes for this purpose.\r\n\r\nNot to be used by itself to populate a medication list. Use a relevant medication-related ENTRY archetype such as INSTRUCTION.medication_order or ACTION.medication for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details about a medication or component of a medication, including strength, form and details of any specific constituents.",
+          "keywords" : [ "medication", "order", "prescribe", "therapy", "substance", "drug", "therapeutic", "therapeutic good", "ad-hoc", "adhoc", "ad hoc", "extemporaneous", "formulation", "medicine" ],
+          "use" : "Use to record details about a medication or component of a medication, including strength, form and details of any specific constituents.\r\n\r\nThis archetype is intended to be used to record details of a medication or component of a medication where the form and detailed ingredients of the medication need to be specified in more detail, for example, infusions and ad hoc mixtures, or where there is no medication terminology available. In the context of an order for administration or dispensing of a medication, nest this archetype within the 'Medication details' SLOT within the INSTRUCTION.medication_order archetype. In the context of recording the actual administration or dispensing or a medication, nest this archetype within the 'Medication details' SLOT within the ACTION.medication archetype.\r\n\r\nThis archetype may be redundant in situations where ordering a medication via prescription uses a terminology to identify the medication item. In that case the brand or product name may identify the form and strength of the substance.",
+          "misuse" : "Not to be used for pharmacy stock-control or within medication catalogues.\r\n\r\nNot to be used to record the intended or administered dose of a medication. Use either the INSTRUCTION.medication_order or the CLUSTER.dosage archetypes for this purpose.\r\n\r\nNot to be used by itself to populate a medication list. Use a relevant medication-related ENTRY archetype such as INSTRUCTION.medication_order or ACTION.medication for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nl"
+          },
+          "purpose" : "Het vastleggen van gegevens over een medicament of een onderdeel van een medicament, inclusief sterkte, vorm en details van een specifiek bestandsdeel.",
+          "keywords" : [ "medicatie", "recept", "voorschrijven", "behandeling", "substantie", "medicament", "therapeuticum", "therapeutische substantie", "ad-hoc", "adhoc", "ad hoc", "medicijn" ],
+          "use" : "*Use to record details about a medication or component of a medication, including strength, form and details of any specific constituents.\r\n\r\nThis archetype is intended to be used to record details of a medication or component of a medication where the form and detailed ingredients of the medication need to be specified in more detail, for example, infusions and ad hoc mixtures, or where there is no medication terminology available. In the context of an order for administration or dispensing of a medication, nest this archetype within the Preparation details SLOT within the INSTRUCTION.medication_order archetype. In the context of recording the actual administration or dispensing or a medication, nest this archetype within the 'Medication details' SLOT within the ACTION.medication archetype.\r\n\r\nThis archetype may be redundant in situations where ordering a medication via prescription uses a terminology to identify the medication item. In that case the brand or product name may identify the form and strength of the substance. (en)",
+          "misuse" : "*Not to be used for pharmacy stock-control or within medication catalogues.\r\n\r\nNot to be used to record the intended or administered dose of a medication. Use either the INSTRUCTION.medication_order or the CLUSTER.dosage archetypes for this purpose.\r\n\r\nNot to be used by itself to populate a medication list. Use a relevant medication-related ENTRY archetype such as INSTRUCTION.medication_order or ACTION.medication for this purpose. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.medication.v2",
     "differential" : true,
@@ -489,16 +588,7 @@
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0003.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_DATE_TIME",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
@@ -551,9 +641,18 @@
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
-          "occurrences" : "0..0",
           "nodeId" : "at0133.1",
-          "attributes" : [ ],
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_CODED_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
           "attributeTuples" : [ ]
         } ]
       } ],
@@ -575,6 +674,12 @@
             "text" : "(Synthesized)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0133.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0133.1",
+            "text" : "Relevance",
+            "description" : "Narrative description of the medication or medication component where it is not possible to describe this fully using structured elements."
           }
         },
         "nb" : {
@@ -761,7 +866,51 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "f147e87caf9f55bed1c07b5273bdc9af"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere strukturerte detaljer om en enkelt anvisning for en ordinert terapeutisk vare.\r\n\r\nHver anvisning er generelt gyldig i et gitt tidsintervall eller antall administreringer.",
+          "keywords" : [ "legemiddel", "ordinering", "foreskrive", "terapi", "substans", "medisin", "medikament", "terapeutisk", "farmasøytisk", "produkt", "posologi", "behandling", "transfusjon" ],
+          "use" : "En anvisning beskriver en eller flere sekvensielle terapeutiske administreringsmønstre, sammen med en overordnet anvisningsvarighet og detaljer om repetisjonsmønstre for administrering utover en gitt dag.\r\n\r\nFor eksempel \"1 tablett om morgenen og en tablett om kvelden i tre uker, på mandager, onsdager og fredager\". Clusteret kan repeteres for å kunne representere et fullstendig sett av anvisninger for en enkelt legemiddelordinering. Clusteret kan gis nytt navn i et templat eller i applikasjonen for å representere en spesifikk dosering som for eksempel: \"Bolus\" eller \"Startdose\".\r\n\r\nArketypen vil generelt bli brukt innenfor en overordnet INSTRUCTION-arketype, primært Legemiddelordinering, men også for ordinering av transfusjoner og dialyse.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para registrar detalhes estruturados de uma única instrução terapêutica para um item terapêutico prescrito.\r\n\r\nCada instrução geralmente se aplica por uma determinado período de tempo, ou por um número fixo de administrações.",
+          "keywords" : [ "medicamento", "prescrição", "prescrever", "terapia", "substância", "droga", "terapêutico", "etc", "produto terapêutico", "farmacêutico", "produtos", "posologia", "tratamento", "transfusão" ],
+          "use" : "Uma instrução descreve um ou mais padrões de administração sequenciais de algum tratamento, juntamente com um período de tempo e detalhes de qualquer padrão repetitivo de administração pretendida além de um único dia.\r\n\r\nPor exemplo: '1 comprimido pela manhã, 1 comprimido à noite, por 3 semanas, às segundas, quartas e sextas'. Este cluster permite várias ocorrências para permitir a representação de um conjunto completo de instruções de dosagem para uma única prescrição de medicação. O cluster pode ser renomeado a nível do template ou em tempo de execução para representar um evento de dosagem específico, como \"dose inicial de carga\", \"bolus\".\r\n\r\nEste arquétipo será geralmente usado no contexto de um arquétipo 'pai' de INSTRUCTION, principalmente na prescrição de medicamentos, mas também para ordens de transfusão e diálise.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record structured details of a single therapeutic direction for an ordered therapeutic/prescribable item.\r\n\r\nEach direction generally applies for a given duration, or fixed number of administrations.",
+          "keywords" : [ "medication", "order", "prescribe", "therapy", "substance", "drug", "therapeutic", "otc", "therapeutic good", "pharmaceutical", "product", "posology", "treatment", "transfusion" ],
+          "use" : "A direction describes one or more sequential therapeutic administration patterns, coupled with an overall direction duration and details of any repetitive pattern of intended administration outside a single day.\r\n\r\nFor example: '1 tab in the morning, 1 tab at night, for 3 weeks, on Mondays, Wednesdays and Fridays'. This cluster allows multiple occurrences to enable representation of a complete set of dosage directions for a single medication order. The cluster can be renamed in template or at run-time to represent a specific dosing event such as 'loading dose', 'bolus'.\r\n\r\nThis archetype will gnerally be used in the context of a parent INSTRUCTION archetype, primarily Medication order but also for transfusion and dialysis orders.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.therapeutic_direction.v1",
     "differential" : true,
@@ -998,7 +1147,51 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "3764905e5b3172cd9eb14e23b0b836c5"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere kombinasjonen av en legemiddeldose og administrasjonstidspunkter innenfor en dag, som del av en legemiddelordinering eller legemiddelhåndtering, eller for andre ordinerte produkter der det er passende.",
+          "keywords" : [ "legemiddel", "ordinering", "foreskrive", "terapi", "substans", "medisin", "terapeutisk", "farmasøytisk", "produkt", "behandling", "væske", "ernæring", "timing", "administrering", "administrasjon", "dose" ],
+          "use" : "Brukes for å registrere kombinasjonen av en legemiddeldose og administrasjonstidspunkter innenfor en dag, som del av en legemiddelordinering eller legemiddelhåndtering, eller for andre ordinerte produkter der det er passende. Mønsteret for administrasjonstidspunkter innenfor en dag kan være så enkelt som ett administrasjonstidspunkt, eller flere administrasjonstidspunkter med forskjellige nivåer av kompleksitet.\r\n\r\nTimingdetaljer som ikke er innenfor én dag, f.eks. ukentlig eller månedlige timinger, håndteres av CLUSTER-arketypen \"Timing - repetering\" som benyttes i CLUSTER-arketypen \"Terapeutisk anvisning\".\r\n\r\nInnenfor en INSTRUCTION og i den igjen innenfor CLUSTER-arketypen \"Terapeutisk anvisning\" (CLUSTER.therapeutic_direction) for å registrere dose og timing av et ordinert produkt, som f.eks. et legemiddel.\r\n\r\nInnenfor en ACTION-arketype kan denne arketypen brukes for å registrere dosen og timing for den faktiske administreringen av det ordinerte produktet.\r\n\r\nSpesifikke tidspunkter for administrering og start/stopp-tidspunkter spesifiseres i CLUSTER-arketypen \"Timing - daglig\".",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Para gravar a combinação de uma quantidade de medicamento e o tempo de administração diário, como parte de uma solicitação ou gestão de medicamentos ou para outros itens terapêuticos/prescritos apropriados.\r\n",
+          "keywords" : [ "medicamento", "solicitação", "prescrever", "terapia", "substância", "fármaco", "terapêutico", "item terapêutico", "farmacêutico", "produto", "posologia", "tratamento", "fluido", "nutrição", "tempo", "administração", "dose" ],
+          "use" : "Usado para gravar a combinação de uma quantidade de medicamento e o tempo de administração diário, como parte de uma solicitação ou gestão de medicamentos ou para outros itens terapêuticos/prescritos apropriados.\r\nO padrão de tempo diário pode ser simples como uma administração única ou múltiplas administrações com níveis variados de complexidade.\r\n\r\nOs detalhes de tempo que não estão dentro de um mesmo dia p.e. semanalmente ou mensalmente são incluídos dentro do arquétipo CLUSTER \"Timing repetition\" carregado dentro do arquétipo CLUSTER \"Therapeutic direction\".\r\n\r\nNo contexto de uma INSTRUÇÃO terapêutica este arquétipo pode ser inserido dentro do SLOT \"Dosage administration\" no CLUSTER \"Therapeutic direction\" para gravar a dose e detalhes de tempo do padrão de uma administração única de um item terapêutico.\r\n\r\nNo contexto de um arquétipo tipo ACTION insira este arquétipo diretamente no SLOT \"Amount\" para gravar a dose e tempo da administração de um item terapêutico.\r\n\r\nTempos específicos de início e parada de administração devem ser especificados dentro do arquétipo CLUSTER \"Timing - daily\".\r\n",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the combination of a medication amount and the administration timing within a single day, as part of a medication order or medication management or for other appropriate therapeutic/prescribable items.",
+          "keywords" : [ "medication", "order", "prescribe", "therapy", "substance", "drug", "therapeutic", "therapeutic good", "pharmaceutical", "product", "posology", "treatment", "fluid", "nutrition", "timing", "administration", "dose" ],
+          "use" : "Use to record the combination of a medication amount and the administration timing for a single day, as part of a medication order or medication management or for other appropriate therapeutic/prescribable items. \r\nThe timing pattern for a single day can be as simple as a single administration time, or multiple administration times with varying levels of complexity.\r\n\r\nTiming details which are not within a single day e.g weekly or monthly timings are carried in the CLUSTER 'Timing repetition' archetype carried within the CLUSTER 'Therapeutic direction' archetype.\r\n\r\nIn the context of a therapeutic INSTRUCTION this archetype may be inserted into the 'Dosage administration' SLOT in the 'Therapeutic direction' CLUSTER to record the dose and timing details of the pattern of single intended administrations of a therapeutic item. \r\n\r\nIn the context of an ACTION archetype insert this archetype directly into the 'Amount' SLOT to record the dose and timing of the actual administration of a therapeutic item.\r\n\r\nSpecific administration start/stop times should be specified within a contained CLUSTER 'Timing - daily' archetype.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.dosage.v1",
     "differential" : true,
@@ -1297,7 +1490,7 @@
               "rmTypeName" : "DV_INTERVAL<DV_QUANTITY>",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "lower",
+                "rmAttributeName" : "upper",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_QUANTITY",
@@ -1347,7 +1540,7 @@
                 } ]
               }, {
                 "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "upper",
+                "rmAttributeName" : "lower",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_QUANTITY",
@@ -1486,7 +1679,53 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "f91e5146f10de3a3a622fe7bb68d9a90"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere strukturert informasjon om planlagt timing av en terapeutisk eller diagnostisk aktivitet innenfor ett døgn.",
+          "keywords" : [ "timing", "administrering", "dosering", "frekvens", "intervall", "ordinering", "anbefaling", "plan", "per dag", "dssn", "tidspunkt", "tidsskjema", "tidsplan", "tidfesting", "tidsberegning", "tidsplanlegging", "planlegging" ],
+          "use" : "Strukturert informasjon om planlagt timing av en terapeutisk eller diagnostisk aktivitet innenfor ett døgn.\r\n\r\nArketypen er laget for å brukes i SLOTet \"Administreringstidspunkt\" i arketypen CLUSTER.dosage (Dosering), men kan også brukes i andre CLUSTER- og ENTRY-arketyper der det er klinisk passende.",
+          "misuse" : "Skal ikke brukes til å registrere detaljer om timing over lengre tidsperioder enn et døgn. Bruk arketypen CLUSTER.timing_repetition for dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "*To provide structured information on time schedules within a single day that is suitable for computation and display for human interpretation.(en)",
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record structured information about the intended timing of a therapeutic or diagnostic activity within any 24 hour period.",
+          "keywords" : [ "timing", "administration", "dosing", "frequency", "interval", "order", "recommendation", "schedule", "per day" ],
+          "use" : "Use to record structured information about the intended timing of a therapeutic or diagnostic activity within any 24 hour period.\r\n\r\nThis archetype is designed to be used within the 'Timing' SLOT within the CLUSTER.dosage archetype, but can also be used in other CLUSTER and ENTRY class archetypes where clinically appropriate.",
+          "misuse" : "Not to be used for recording timing details over periods longer than a single 24 hour period. Use the CLUSTER.timing_repetition archetype for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.timing_daily.v1",
     "differential" : true,
@@ -1512,7 +1751,17 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "DV_QUANTITY",
-              "attributes" : [ ],
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "property",
+                "children" : [ {
+                  "@type" : "C_TERMINOLOGY_CODE",
+                  "terminologyId" : {
+                    "value" : "openehr"
+                  },
+                  "constraint" : [ "382" ]
+                } ]
+              } ],
               "attributeTuples" : [ {
                 "@type" : "C_ATTRIBUTE_TUPLE",
                 "members" : [ {
@@ -1647,11 +1896,21 @@
               "rmTypeName" : "DV_INTERVAL<DV_QUANTITY>",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "lower",
+                "rmAttributeName" : "upper",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_QUANTITY",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "property",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "terminologyId" : {
+                        "value" : "openehr"
+                      },
+                      "constraint" : [ "382" ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ {
                     "@type" : "C_ATTRIBUTE_TUPLE",
                     "members" : [ {
@@ -1784,11 +2043,21 @@
                 } ]
               }, {
                 "@type" : "C_ATTRIBUTE",
-                "rmAttributeName" : "upper",
+                "rmAttributeName" : "lower",
                 "children" : [ {
                   "@type" : "C_COMPLEX_OBJECT",
                   "rmTypeName" : "DV_QUANTITY",
-                  "attributes" : [ ],
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "property",
+                    "children" : [ {
+                      "@type" : "C_TERMINOLOGY_CODE",
+                      "terminologyId" : {
+                        "value" : "openehr"
+                      },
+                      "constraint" : [ "382" ]
+                    } ]
+                  } ],
                   "attributeTuples" : [ {
                     "@type" : "C_ATTRIBUTE_TUPLE",
                     "members" : [ {
@@ -1982,32 +2251,14 @@
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0023.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_BOOLEAN",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
           "rmTypeName" : "ELEMENT",
           "occurrences" : "0..0",
           "nodeId" : "at0024.1",
-          "attributes" : [ {
-            "@type" : "C_ATTRIBUTE",
-            "rmAttributeName" : "value",
-            "children" : [ {
-              "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "DV_BOOLEAN",
-              "attributes" : [ ],
-              "attributeTuples" : [ ]
-            } ]
-          } ],
+          "attributes" : [ ],
           "attributeTuples" : [ ]
         }, {
           "@type" : "C_COMPLEX_OBJECT",
