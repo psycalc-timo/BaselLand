@@ -1,0 +1,127 @@
+archetype (adl_version=1.4; uid=6dc69d10-d5b7-4e91-b252-05ed560f94a8)
+	openEHR-EHR-OBSERVATION.baselland_additional.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::de]>
+
+description
+	original_author = <
+		["date"] = <"2025-06-23">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"0aa976cc70ee76f2129b1e6df19150d2">
+		["build_uid"] = <"55265fd2-101b-3396-8a99-5658b20d8061">
+	>
+
+definition
+	OBSERVATION[at0000] matches {    -- baselland_additional
+		data matches {
+			HISTORY[at0001] matches {    -- History
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..*} matches {    -- Any event
+						data matches {
+							ITEM_TREE[at0003] matches {    -- Tree
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {    -- Aufenthaltsort
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+									ELEMENT[at0006] occurrences matches {0..1} matches {    -- Eintrittsdatum
+										value matches {
+											DV_DATE matches {*}
+										}
+									}
+									ELEMENT[at0009] occurrences matches {0..1} matches {    -- Austrittsdatum
+										value matches {
+											DV_DATE matches {*}
+										}
+									}
+									ELEMENT[at0011] occurrences matches {0..1} matches {    -- Soziale Umstände
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0012,    -- Alleinstehend
+													at0013]    -- In Beziehung
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		protocol matches {
+			ITEM_TREE[at0007] matches {*}    -- Item tree
+		}
+	}
+
+ontology
+	term_definitions = <
+		["de"] = <
+			items = <
+				["at0000"] = <
+					text = <"baselland_additional">
+					description = <"baselland_additional">
+				>
+				["at0001"] = <
+					text = <"History">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Any event">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Aufenthaltsort">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Eintrittsdatum">
+					description = <"">
+				>
+				["at0007"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0009"] = <
+					text = <"Austrittsdatum">
+					description = <"">
+				>
+				["at0011"] = <
+					text = <"Soziale Umstände">
+					description = <"">
+				>
+				["at0012"] = <
+					text = <"Alleinstehend">
+					description = <"">
+				>
+				["at0013"] = <
+					text = <"In Beziehung">
+					description = <"">
+				>
+			>
+		>
+	>
