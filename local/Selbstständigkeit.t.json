@@ -1,0 +1,4433 @@
+{
+  "@type" : "TEMPLATE",
+  "uid" : "95aad4a1-8830-4f78-9aa8-110ee5889ee1",
+  "description" : {
+    "@type" : "RESOURCE_DESCRIPTION",
+    "originalAuthor" : {
+      "date" : "2024-03-22"
+    },
+    "otherContributors" : [ ],
+    "lifecycleState" : {
+      "codeString" : "unmanaged"
+    },
+    "ipAcknowledgements" : { },
+    "references" : { },
+    "conversionDetails" : { },
+    "otherDetails" : {
+      "licence" : "",
+      "custodian_organisation" : "",
+      "original_namespace" : "",
+      "original_publisher" : "",
+      "custodian_namespace" : "",
+      "sem_ver" : "5.0.0",
+      "build_uid" : "",
+      "MD5-CAM-1.0.1" : "bb725b66f29d4e836116ba3981294828",
+      "PARENT:MD5-CAM-1.0.1" : "005501C1FA493A4838F5F1121F2870EC"
+    },
+    "details" : {
+      "de" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "de"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "sv" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sv"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "fi" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "fi"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ko" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ko"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "pt-br" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "pt-br"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "en" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "en"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "ar-sy" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "ar-sy"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "it" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "it"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "zh" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "zh"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nb" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nb"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "es-ar" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "es-ar"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "sl" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "sl"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      },
+      "nl" : {
+        "@type" : "RESOURCE_DESCRIPTION_ITEM",
+        "language" : {
+          "terminologyId" : {
+            "value" : "ISO_639-1"
+          },
+          "codeString" : "nl"
+        },
+        "keywords" : [ ],
+        "originalResourceUri" : { },
+        "otherDetails" : { }
+      }
+    }
+  },
+  "parentArchetypeId" : "openEHR-EHR-COMPOSITION.report.v1",
+  "differential" : false,
+  "archetypeId" : {
+    "@type" : "ARCHETYPE_HRID",
+    "value" : "openEHR-EHR-COMPOSITION.t_report.v1"
+  },
+  "definition" : {
+    "@type" : "C_COMPLEX_OBJECT",
+    "rmTypeName" : "COMPOSITION",
+    "occurrences" : "1..1",
+    "nodeId" : "at0000.1",
+    "attributes" : [ {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "category",
+      "existence" : "1..1",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "DV_CODED_TEXT",
+        "occurrences" : "1..1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "defining_code",
+          "existence" : "1..1",
+          "children" : [ {
+            "@type" : "C_TERMINOLOGY_CODE",
+            "rmTypeName" : "CODE_PHRASE",
+            "occurrences" : "1..1",
+            "terminologyId" : {
+              "value" : "openehr"
+            },
+            "constraint" : [ "433" ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "context",
+      "existence" : "0..1",
+      "children" : [ {
+        "@type" : "C_COMPLEX_OBJECT",
+        "rmTypeName" : "EVENT_CONTEXT",
+        "occurrences" : "1..1",
+        "attributes" : [ {
+          "@type" : "C_ATTRIBUTE",
+          "rmAttributeName" : "other_context",
+          "existence" : "0..1",
+          "children" : [ {
+            "@type" : "C_COMPLEX_OBJECT",
+            "rmTypeName" : "ITEM_TREE",
+            "occurrences" : "1..1",
+            "nodeId" : "at0001",
+            "attributes" : [ {
+              "@type" : "C_ATTRIBUTE",
+              "rmAttributeName" : "items",
+              "existence" : "0..1",
+              "cardinality" : {
+                "@type" : "CARDINALITY",
+                "interval" : "0..*",
+                "ordered" : false,
+                "unique" : false
+              },
+              "children" : [ {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..1",
+                "nodeId" : "at0002",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "existence" : "0..1",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_TEXT",
+                    "occurrences" : "1..1",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "C_COMPLEX_OBJECT",
+                "rmTypeName" : "ELEMENT",
+                "occurrences" : "0..1",
+                "nodeId" : "at0005",
+                "attributes" : [ {
+                  "@type" : "C_ATTRIBUTE",
+                  "rmAttributeName" : "value",
+                  "existence" : "0..1",
+                  "children" : [ {
+                    "@type" : "C_COMPLEX_OBJECT",
+                    "rmTypeName" : "DV_TEXT",
+                    "occurrences" : "1..1",
+                    "attributes" : [ ],
+                    "attributeTuples" : [ ]
+                  } ]
+                } ],
+                "attributeTuples" : [ ]
+              }, {
+                "@type" : "ARCHETYPE_SLOT",
+                "rmTypeName" : "CLUSTER",
+                "occurrences" : "0..*",
+                "nodeId" : "at0006",
+                "includes" : [ {
+                  "@type" : "ASSERTION",
+                  "stringExpression" : "archetype_id/value matches {/.*/}",
+                  "expression" : {
+                    "@type" : "BINARY_OPERATOR",
+                    "type" : "BOOLEAN",
+                    "operator" : "matches",
+                    "leftOperand" : {
+                      "@type" : "MODEL_REFERENCE",
+                      "type" : "STRING",
+                      "precedenceOverriden" : false,
+                      "referenceType" : "Attribute",
+                      "path" : "archetype_id/value"
+                    },
+                    "rightOperand" : {
+                      "@type" : "CONSTRAINT",
+                      "type" : "STRING",
+                      "precedenceOverriden" : false,
+                      "referenceType" : "Constraint",
+                      "item" : {
+                        "@type" : "C_STRING",
+                        "constraint" : [ "/.*/" ]
+                      }
+                    },
+                    "precedenceOverriden" : false
+                  },
+                  "variables" : [ ]
+                } ],
+                "excludes" : [ ],
+                "closed" : false
+              }, {
+                "@type" : "C_ARCHETYPE_ROOT",
+                "rmTypeName" : "CLUSTER",
+                "occurrences" : "0..1",
+                "nodeId" : "at0006.1",
+                "attributes" : [ ],
+                "attributeTuples" : [ ],
+                "archetypeRef" : "openEHR-EHR-CLUSTER.ovl-care_journey_metadata-001.v0",
+                "referenceType" : "archetypeOverlay"
+              } ]
+            } ],
+            "attributeTuples" : [ ]
+          } ]
+        } ],
+        "attributeTuples" : [ ]
+      } ]
+    }, {
+      "@type" : "C_ATTRIBUTE",
+      "rmAttributeName" : "content",
+      "existence" : "0..1",
+      "cardinality" : {
+        "@type" : "CARDINALITY",
+        "interval" : "1..*",
+        "ordered" : false,
+        "unique" : false
+      },
+      "children" : [ {
+        "@type" : "C_ARCHETYPE_ROOT",
+        "rmTypeName" : "OBSERVATION",
+        "occurrences" : "0..1",
+        "nodeId" : "at0.12",
+        "attributes" : [ ],
+        "attributeTuples" : [ ],
+        "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-modified_barthel_index-001.v0",
+        "referenceType" : "archetypeOverlay"
+      } ]
+    } ],
+    "attributeTuples" : [ ]
+  },
+  "terminology" : {
+    "@type" : "ARCHETYPE_TERMINOLOGY",
+    "conceptCode" : "at0000",
+    "termDefinitions" : {
+      "ar-sy" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "RSO_color",
+          "description" : "وثيقة لتوصيل المعلومات للآخرين, عادة كاستجابة لطلب من طرف آخر."
+        },
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "تقرير",
+          "description" : "وثيقة لتوصيل المعلومات للآخرين, عادة كاستجابة لطلب من طرف آخر."
+        },
+        "at0001" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0001",
+          "text" : "*Tree(en)",
+          "description" : "*@ internal @(en)"
+        },
+        "at0002" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "العنصر التعريفي الفريد للتقرير",
+          "description" : "معلومات التعريف حول التقرير"
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "الحالة",
+          "description" : "حالة التقرير بشكل كلي. و لا تمثل هذه الحالة جزءا من التقرير و إنما جميعه ككل."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "*Extension(en)",
+          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms.(en)",
+          "comment" : "* e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)"
+        },
+        "at0006.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "*Extension(en)",
+          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms.(en)",
+          "comment" : "* e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)"
+        }
+      },
+      "sl" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "RSO_color",
+          "description" : "*Document to communicate information to others, commonly in response to a request from another party.(en)"
+        },
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Poročilo",
+          "description" : "*Document to communicate information to others, commonly in response to a request from another party.(en)"
+        },
+        "at0001" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0001",
+          "text" : "Tree",
+          "description" : "*@ internal @(en)"
+        },
+        "at0002" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "ID Poročila",
+          "description" : "*Identification information about the report.(en)"
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Status",
+          "description" : "*The status of the entire report. Note: This is not the status of any of the report components.(en)"
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "*Extension(en)",
+          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms.(en)",
+          "comment" : "* e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)"
+        },
+        "at0006.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "*Extension(en)",
+          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms.(en)",
+          "comment" : "* e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)"
+        }
+      },
+      "en" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Selbstständigkeit",
+          "description" : "Document to communicate information to others, commonly in response to a request from another party."
+        },
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Report",
+          "description" : "Document to communicate information to others, commonly in response to a request from another party."
+        },
+        "at0001" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0001",
+          "text" : "Tree",
+          "description" : "@ internal @"
+        },
+        "at0002" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "Report ID",
+          "description" : "Identification information about the report."
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Status",
+          "description" : "The status of the entire report. Note: This is not the status of any of the report components."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Extension",
+          "description" : "Additional information required to capture local context or to align with other reference models/formalisms.",
+          "comment" : "For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents."
+        },
+        "at0006.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Extension",
+          "description" : "Additional information required to capture local context or to align with other reference models/formalisms.",
+          "comment" : "For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents."
+        }
+      },
+      "es-ar" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "RSO_color",
+          "description" : "Documento para comunicar información a otros, comunmente en respuesta a la solicitud de un tercero."
+        },
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Informe",
+          "description" : "Documento para comunicar información a otros, comunmente en respuesta a la solicitud de un tercero."
+        },
+        "at0001" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0001",
+          "text" : "Tree",
+          "description" : "@ internal @"
+        },
+        "at0002" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "ID del informe",
+          "description" : "Información para la identificación del informe."
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Estado",
+          "description" : "El estado del informe como un todo. Nota: no se refiere al estado de alguno de los componentes del informe."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "*Extension(en)",
+          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms.(en)",
+          "comment" : "* e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)"
+        },
+        "at0006.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "*Extension(en)",
+          "description" : "*Additional information required to capture local context or to align with other reference models/formalisms.(en)",
+          "comment" : "* e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)"
+        }
+      },
+      "pt-br" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "RSO_color",
+          "description" : "Documento para comunicar informações a outros, comumente em resposta a uma solicitação de terceiros."
+        },
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Relatório",
+          "description" : "Documento para comunicar informações a outros, comumente em resposta a uma solicitação de terceiros."
+        },
+        "at0001" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0001",
+          "text" : "Tree",
+          "description" : "@ internal @"
+        },
+        "at0002" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "Identificador do relatório",
+          "description" : "Informação de identificação sobre o relatório."
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Estado",
+          "description" : "O estado de todo o relatório. Nota: este não é o estado de qualquer dos componentes do relatório."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Extensão",
+          "description" : "Informação adicional requerida para capturar o contexto local ou para alinhar a outros modelos de referência/formalismos.",
+          "comment" : "Por exemplo: requisitos de informações locais ou metadados para alinhar com equivalentes do FHIR or CIMI."
+        },
+        "at0006.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Extensão",
+          "description" : "Informação adicional requerida para capturar o contexto local ou para alinhar a outros modelos de referência/formalismos.",
+          "comment" : "Por exemplo: requisitos de informações locais ou metadados para alinhar com equivalentes do FHIR or CIMI."
+        }
+      },
+      "nb" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "RSO_color",
+          "description" : "Dokument som brukes for å kommunisere informasjon til andre, ofte som svar på en forespørsel."
+        },
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Rapport",
+          "description" : "Dokument som brukes for å kommunisere informasjon til andre, ofte som svar på en forespørsel."
+        },
+        "at0001" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0001",
+          "text" : "Tree",
+          "description" : "@ internal @"
+        },
+        "at0002" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "Rapport ID",
+          "description" : "Informasjon som identifiserer rapporten."
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Status",
+          "description" : "Status for hele rapporten. Merk: Dette er ikke statusen for noen av enkeltkomponentene i rapporten."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Tilleggsinformasjon",
+          "description" : "Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.",
+          "comment" : "For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI."
+        },
+        "at0006.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Tilleggsinformasjon",
+          "description" : "Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.",
+          "comment" : "For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI."
+        }
+      },
+      "de" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "Patientenverfügung",
+          "description" : "Ein Dokument zur Übermittlung von Informationen an andere, meist als Antwort auf eine Anfrage."
+        },
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Bericht",
+          "description" : "Ein Dokument zur Übermittlung von Informationen an andere, meist als Antwort auf eine Anfrage."
+        },
+        "at0001" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0001",
+          "text" : "Tree",
+          "description" : "@ internal @"
+        },
+        "at0002" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "Bericht ID",
+          "description" : "Identifizierungsmerkmal des Berichts."
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Status",
+          "description" : "Der Status des gesamten Berichts. Hinweis: Dies ist nicht der Status einer Berichtskomponente."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Erweiterung",
+          "description" : "Zusätzliche Informationen zur Erfassung lokaler Inhalte oder Anpassung an andere Referenzmodelle/Formalismen.",
+          "comment" : "Zum Beispiel: lokaler Informationsbedarf oder zusätzliche Metadaten zur Anpassung an FHIR-Ressourcen oder CIMI-Modelle."
+        },
+        "at0006.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Erweiterung",
+          "description" : "Zusätzliche Informationen zur Erfassung lokaler Inhalte oder Anpassung an andere Referenzmodelle/Formalismen.",
+          "comment" : "Zum Beispiel: lokaler Informationsbedarf oder zusätzliche Metadaten zur Anpassung an FHIR-Ressourcen oder CIMI-Modelle."
+        }
+      },
+      "ko" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "RSO_color",
+          "description" : "일반적으로 다른 상대의 요청에 대한 응답으로, 다른 사람들과 정보를 통신하는 문서."
+        },
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "*Report(en)",
+          "description" : "일반적으로 다른 상대의 요청에 대한 응답으로, 다른 사람들과 정보를 통신하는 문서."
+        },
+        "at0001" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0001",
+          "text" : "Tree",
+          "description" : "@ internal @"
+        },
+        "at0002" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "*Report ID(en)",
+          "description" : "리포트에 대한 식별 정보."
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "*Status(en)",
+          "description" : "전체 리포트의 상태. 주의: 이것은 리포트 컴포넌트들 중 어떤 부분의 상태가 아님."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "*Extension(en)",
+          "description" : "로컬 컨텍스트를 획득하는데 필요하거나 다른 참조 모델/표현과 조정에 필요한 추가 정보",
+          "comment" : "예: 로컬 정보 요구사항 또는 FHIR나 CIMI의 동등한 것들과 조정하는 추가 메타데이터"
+        },
+        "at0006.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "*Extension(en)",
+          "description" : "로컬 컨텍스트를 획득하는데 필요하거나 다른 참조 모델/표현과 조정에 필요한 추가 정보",
+          "comment" : "예: 로컬 정보 요구사항 또는 FHIR나 CIMI의 동등한 것들과 조정하는 추가 메타데이터"
+        }
+      },
+      "fi" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "RSO_color",
+          "description" : "Asiakirja tiedon välittämiseksi muille, vastauksena yleensä toisen osapuolen pyyntöön."
+        },
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Raportti",
+          "description" : "Asiakirja tiedon välittämiseksi muille, vastauksena yleensä toisen osapuolen pyyntöön."
+        },
+        "at0001" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0001",
+          "text" : "Tree",
+          "description" : "@ internal @"
+        },
+        "at0002" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "Raportti ID",
+          "description" : "Raportin tunnistetiedot"
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Status",
+          "description" : "Koko raportin tila. Huomaa: Tämä ei ole minkään raporttiosien tila."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Laajennus",
+          "description" : "Tarvitaan lisätietoja paikallisen tilanteen mallintamiseksi tai yhdenmukaistamiseksi muiden vertailumallien / muodollisuuksien kanssa. \r\n",
+          "comment" : "Esimerkiksi: paikalliset tietovaatimukset tai ylimääräiset metatiedot FHIR- tai CIMI-vastaavien mukaisiksi."
+        },
+        "at0006.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Laajennus",
+          "description" : "Tarvitaan lisätietoja paikallisen tilanteen mallintamiseksi tai yhdenmukaistamiseksi muiden vertailumallien / muodollisuuksien kanssa. \r\n",
+          "comment" : "Esimerkiksi: paikalliset tietovaatimukset tai ylimääräiset metatiedot FHIR- tai CIMI-vastaavien mukaisiksi."
+        }
+      },
+      "it" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "RSO_color",
+          "description" : "Documento per comunicare informazioni ad altri, comunemente in risposta ad una richiesta di un altro soggetto."
+        },
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Rapporto",
+          "description" : "Documento per comunicare informazioni ad altri, comunemente in risposta ad una richiesta di un altro soggetto."
+        },
+        "at0001" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0001",
+          "text" : "Tree",
+          "description" : "@ internal @"
+        },
+        "at0002" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "ID del rapporto",
+          "description" : "Informazioni di identificazione del rapporto"
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Stato",
+          "description" : "Lo stato dell'intero rapporto. Nota: Questo non è lo stato di alcuna delle componenti del rapporto."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Estensione",
+          "description" : "Informazioni aggiuntive necessarie per catturare il contesto locale o per allinearsi con altri modelli/formalismi di riferimento.",
+          "comment" : "Per esempio: requisiti informativi locali o metadati aggiuntivi per allinearsi con gli equivalenti FHIR o CIMI."
+        },
+        "at0006.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Estensione",
+          "description" : "Informazioni aggiuntive necessarie per catturare il contesto locale o per allinearsi con altri modelli/formalismi di riferimento.",
+          "comment" : "Per esempio: requisiti informativi locali o metadati aggiuntivi per allinearsi con gli equivalenti FHIR o CIMI."
+        }
+      },
+      "nl" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "RSO_color",
+          "description" : "Document om informatie met anderen te communiceren, vaak op verzoek van een andere partij."
+        },
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Rapportage",
+          "description" : "Document om informatie met anderen te communiceren, vaak op verzoek van een andere partij."
+        },
+        "at0001" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0001",
+          "text" : "Tree",
+          "description" : "@ internal @"
+        },
+        "at0002" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "Rapportage ID",
+          "description" : "Identificerende informatie over deze rapportage."
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Status",
+          "description" : "De status van de rapportage. Let op, dit is niet de status van een van de onderdelen van de rapportage."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Uitbreiding",
+          "description" : "Extra informatie nodig om de context te beschrijven of te voldoen aan andere modellen of formalismen.",
+          "comment" : "Bijvoorbeeld: lokale informatievereisten of aanvullende metadata om overeen te komen met FHIR- of CIMI-equivalenten."
+        },
+        "at0006.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Uitbreiding",
+          "description" : "Extra informatie nodig om de context te beschrijven of te voldoen aan andere modellen of formalismen.",
+          "comment" : "Bijvoorbeeld: lokale informatievereisten of aanvullende metadata om overeen te komen met FHIR- of CIMI-equivalenten."
+        }
+      },
+      "sv" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "RSO_color",
+          "description" : "Dokument för att förmedla information till andra, vanligen som svar på en begäran från en annan part."
+        },
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "Rapport",
+          "description" : "Dokument för att förmedla information till andra, vanligen som svar på en begäran från en annan part."
+        },
+        "at0001" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0001",
+          "text" : "Tree",
+          "description" : "@ internal @"
+        },
+        "at0002" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "Rapport-id",
+          "description" : "Information som identifierar rapporten.\r\n"
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "Status",
+          "description" : "Status för hela rapporten. Observera att detta inte är status för någon av rapportkomponenterna."
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Tilläggsinformation",
+          "description" : "Plats för tilläggsinformation som krävs för lokala anpassningar eller anpassning till andra referensmodeller eller formella krav.",
+          "comment" : "Exempelvis lokala informationskrav eller metadata för anpassning till FHIR- eller CIMI-motsvarigheter."
+        },
+        "at0006.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "Tilläggsinformation",
+          "description" : "Plats för tilläggsinformation som krävs för lokala anpassningar eller anpassning till andra referensmodeller eller formella krav.",
+          "comment" : "Exempelvis lokala informationskrav eller metadata för anpassning till FHIR- eller CIMI-motsvarigheter."
+        }
+      },
+      "zh" : {
+        "at0000.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000.1",
+          "text" : "RSO_color",
+          "description" : "用于交流信息的文件，通常是为了响应某一方的请求"
+        },
+        "at0000" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0000",
+          "text" : "报告",
+          "description" : "用于交流信息的文件，通常是为了响应某一方的请求"
+        },
+        "at0001" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0001",
+          "text" : "Tree",
+          "description" : "@ internal @"
+        },
+        "at0002" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0002",
+          "text" : "报告ID",
+          "description" : "关于这份报告的标识信息。"
+        },
+        "at0005" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0005",
+          "text" : "状态",
+          "description" : "整份报告的状态。注意：这不是指报告的任何一个组成部分的状态"
+        },
+        "at0006" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "扩展",
+          "description" : "用于捕获本地的上下文或与其他参考模型/形式保持一致所需的其他信息。",
+          "comment" : "比如：本地的信息需求或是为了与FHIR或CIMI保持一致的其他元数据。"
+        },
+        "at0006.1" : {
+          "@type" : "ARCHETYPE_TERM",
+          "code" : "at0006",
+          "text" : "扩展",
+          "description" : "用于捕获本地的上下文或与其他参考模型/形式保持一致所需的其他信息。",
+          "comment" : "比如：本地的信息需求或是为了与FHIR或CIMI保持一致的其他元数据。"
+        }
+      }
+    },
+    "termBindings" : { },
+    "terminologyExtracts" : { },
+    "valueSets" : { }
+  },
+  "adlVersion" : "1.4",
+  "buildUid" : "b057d0e0-45b9-3d97-ab87-3004b7f6d386",
+  "rmName" : "openehr",
+  "rmRelease" : "1.1.0",
+  "generated" : true,
+  "templateId" : "Selbstständigkeit",
+  "otherMetaData" : { },
+  "templateOverlays" : [ {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "488324de-e79f-4ded-abb2-0a669569908a",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "375F6CD7464C065CF56FC7D2EEC836FD"
+      },
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "keywords" : [ ],
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "keywords" : [ ],
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-CLUSTER.care_journey_metadata.v0",
+    "differential" : false,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-CLUSTER.ovl-care_journey_metadata-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "CLUSTER",
+      "occurrences" : "1..1",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "existence" : "1..1",
+        "cardinality" : {
+          "@type" : "CARDINALITY",
+          "interval" : "1..*",
+          "ordered" : false,
+          "unique" : false
+        },
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..1",
+          "nodeId" : "at0001",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "existence" : "0..1",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_TEXT",
+              "occurrences" : "1..1",
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..1",
+          "nodeId" : "at0002.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "existence" : "0..1",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_IDENTIFIER",
+              "occurrences" : "1..1",
+              "defaultValue" : {
+                "@type" : "DV_IDENTIFIER"
+              },
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..1",
+          "nodeId" : "at0003.1",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "value",
+            "existence" : "0..1",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "DV_IDENTIFIER",
+              "occurrences" : "1..1",
+              "defaultValue" : {
+                "@type" : "DV_IDENTIFIER"
+              },
+              "attributes" : [ ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "en" : {
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Care journey metadata",
+            "description" : "Tp capture Care plan metadata"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Care plan name",
+            "description" : "The name , preferably coded of the Care plan with which this journey is associated, and against which the composition was updated."
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Care plan identifier",
+            "description" : "The identifier , preferably coded, of the Care plan with which this journey is associated, and against which the composition was updated."
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Patient journey identifier",
+            "description" : "A patient-journey specific identifier i.e unique to a patient's journey along a specific care pathway."
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Care plan identifier",
+            "description" : "The identifier , preferably coded, of the Care plan with which this journey is associated, and against which the composition was updated."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Patient journey identifier",
+            "description" : "A patient-journey specific identifier i.e unique to a patient's journey along a specific care pathway."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Care journey metadata",
+            "description" : "Tp capture Care plan metadata"
+          }
+        },
+        "de" : {
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Care journey metadata",
+            "description" : "*Tp capture Care plan metadata (en)"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Care plan name",
+            "description" : "*The name , preferably coded of the Care plan with which this journey is associated, and against which the composition was updated. (en)"
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Care plan identifier",
+            "description" : "*The identifier , preferably coded, of the Care plan with which this journey is associated, and against which the composition was updated. (en)"
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Patient journey identifier",
+            "description" : "*A patient-journey specific identifier i.e unique to a patient's journey along a specific care pathway. (en)"
+          },
+          "at0002.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "Care plan identifier",
+            "description" : "*The identifier , preferably coded, of the Care plan with which this journey is associated, and against which the composition was updated. (en)"
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Patient journey identifier",
+            "description" : "*A patient-journey specific identifier i.e unique to a patient's journey along a specific care pathway. (en)"
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Care journey metadata",
+            "description" : "*Tp capture Care plan metadata (en)"
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "2ad1bd82-b3b3-4d53-ae06-ea512bf2c181",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "e09a2b3d-2bd7-4d1b-aaa7-d7850e0325c6",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "85363F8925FD7F3838511B6F66ED5C0E"
+      },
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Darstellung einer funktionellen Bewertung für Alltagsaktivitäten unter Verwendung der modifizierten Version des Barthel-Index.",
+          "keywords" : [ "Score", "Index", "Aktivitäten", "Alltag", "Abhängigkeit" ],
+          "use" : "Zur Darstellung einer funktionellen Bewertung für Alltagsaktivitäten unter Verwendung der modifizierten Version des Barthel-Index.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ru" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ru"
+          },
+          "purpose" : "Для записи оценки зависимости от посторонней помощи в повседневной жизни. Общая оценка - сумма баллов каждого атрибута.",
+          "keywords" : [ "баллы", "индекс", "активность", "независимость", "повседневная жизнь" ],
+          "use" : "Для оценки независимости от посторонней помощи. Часто в доме престарелых.",
+          "misuse" : "Не использовать для описания индивидуальных особенностей.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere Barthel ADL-indeks skår for behov for hjelp til aktiviteter i dagliglivet.",
+          "keywords" : [ "Registrering", "Indeks", "Aktivitet", "Daglig", "Avhengighet", "Hjelpebehov", "Mestring", "Selvstendighet" ],
+          "use" : "Brukes for å registrere Barthel ADL-indeks skår for behov for hjelp til aktiviteter i dagliglivet. Totalskåren er summen av de enkelte underpunktene.\r\n\r\nOBS: Maryland State Medical Society har copyright på Barthel indeks. Den kan brukes til ikke-kommersielle formål med følgende sitat:\r\nMahoney FI, Barthel D. “Functional evaluation: the Barthel Index.” Maryland State Med Journal 1965;14:56-61. Used with permission. \r\n\r\nFor modifisering eller kommersiell bruk kreves det tillatelse.",
+          "misuse" : "Om en kun bruker enkeltelementer fra scoringen må feltet \"Totalskår\" ikke benyttes, siden summering av enkeltelementer fra arketypen vil gi ufullstendig totalskår.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a functional assessment for activities of daily living using the modified version of the Barthel index.",
+          "keywords" : [ "score", "index", "activities", "daily living", "dependency" ],
+          "use" : "Use to record a functional assessment for activities of daily living using the modified version of the Barthel index.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ar-sy" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ar-sy"
+          },
+          "purpose" : "لتسجيل حرز الاعتماد على المساعدة للقيام بالأنشطة المهمة في الحياة اليومية. \r\nالحرز الإجمالي هو مجموع الأحراز الترتيبية لكل صفة.",
+          "keywords" : [ "الحرز", "المعامل", "الأنشطة", "الحياة اليومية", "الاعتمادية" ],
+          "use" : "لتجميع حرز استقلالية الأشخاص - حتى في دار المسنين.",
+          "misuse" : "لا يستخدم لتسجيل خصائص الأفراد.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nl"
+          },
+          "purpose" : "To record a score of dependency on help to undertake important activities of daily living. The total score is the sum of the ordinal scores for each attribute.",
+          "keywords" : [ "score", "index", "activities", "daily living", "dependency" ],
+          "use" : "For scoring people's independence - often in a nursing home.",
+          "misuse" : "Not to be used to record individual features.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
+    },
+    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.modified_barthel_index.v0",
+    "differential" : false,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-OBSERVATION.ovl-modified_barthel_index-001.v0"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "OBSERVATION",
+      "occurrences" : "1..1",
+      "nodeId" : "at0000.1",
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "data",
+        "existence" : "1..1",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "HISTORY",
+          "occurrences" : "1..1",
+          "nodeId" : "at0002",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "events",
+            "existence" : "0..1",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "1..*",
+              "ordered" : false,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "EVENT",
+              "occurrences" : "0..1",
+              "nodeId" : "at0003.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "data",
+                "existence" : "1..1",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "occurrences" : "1..1",
+                  "nodeId" : "at0001",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "existence" : "0..1",
+                    "cardinality" : {
+                      "@type" : "CARDINALITY",
+                      "interval" : "0..*",
+                      "ordered" : true,
+                      "unique" : false
+                    },
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0008",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_ORDINAL",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "symbol",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 0,
+                                  "upper" : 0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0037" ]
+                              } ]
+                            }, {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 1,
+                                  "upper" : 1,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0044" ]
+                              } ]
+                            }, {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 2,
+                                  "upper" : 2,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0038" ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0004",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_ORDINAL",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "symbol",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 0,
+                                  "upper" : 0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0005" ]
+                              } ]
+                            }, {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 1,
+                                  "upper" : 1,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0006" ]
+                              } ]
+                            }, {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 2,
+                                  "upper" : 2,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0007" ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0034",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_ORDINAL",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "symbol",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 0,
+                                  "upper" : 0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0035" ]
+                              } ]
+                            }, {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 1,
+                                  "upper" : 1,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0036" ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0030",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_ORDINAL",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "symbol",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 0,
+                                  "upper" : 0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0031" ]
+                              } ]
+                            }, {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 1,
+                                  "upper" : 1,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0032" ]
+                              } ]
+                            }, {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 2,
+                                  "upper" : 2,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0033" ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0026",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_ORDINAL",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "symbol",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 0,
+                                  "upper" : 0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0027" ]
+                              } ]
+                            }, {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 1,
+                                  "upper" : 1,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0028" ]
+                              } ]
+                            }, {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 2,
+                                  "upper" : 2,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0029" ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0021",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_ORDINAL",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "symbol",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 0,
+                                  "upper" : 0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0022" ]
+                              } ]
+                            }, {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 1,
+                                  "upper" : 1,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0023" ]
+                              } ]
+                            }, {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 2,
+                                  "upper" : 2,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0024" ]
+                              } ]
+                            }, {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 3,
+                                  "upper" : 3,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0025" ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0017",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_ORDINAL",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "symbol",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 0,
+                                  "upper" : 0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0018" ]
+                              } ]
+                            }, {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 1,
+                                  "upper" : 1,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0019" ]
+                              } ]
+                            }, {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 2,
+                                  "upper" : 2,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0020" ]
+                              } ]
+                            }, {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 3,
+                                  "upper" : 3,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0039" ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0012",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_ORDINAL",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "symbol",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 0,
+                                  "upper" : 0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0013" ]
+                              } ]
+                            }, {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 1,
+                                  "upper" : 1,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0014" ]
+                              } ]
+                            }, {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 2,
+                                  "upper" : 2,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0011" ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0040",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_ORDINAL",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "symbol",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 0,
+                                  "upper" : 0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0041" ]
+                              } ]
+                            }, {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 1,
+                                  "upper" : 1,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0042" ]
+                              } ]
+                            }, {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 2,
+                                  "upper" : 2,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0043" ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0009",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_ORDINAL",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ {
+                            "@type" : "C_ATTRIBUTE_TUPLE",
+                            "members" : [ {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "value",
+                              "children" : [ ]
+                            }, {
+                              "@type" : "C_ATTRIBUTE",
+                              "rmAttributeName" : "symbol",
+                              "children" : [ ]
+                            } ],
+                            "tuples" : [ {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 0,
+                                  "upper" : 0,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0010" ]
+                              } ]
+                            }, {
+                              "@type" : "C_PRIMITIVE_TUPLE",
+                              "members" : [ {
+                                "@type" : "C_INTEGER",
+                                "constraint" : [ {
+                                  "lower" : 1,
+                                  "upper" : 1,
+                                  "lowerIncluded" : true,
+                                  "upperIncluded" : true,
+                                  "upperUnbounded" : false,
+                                  "lowerUnbounded" : false
+                                } ]
+                              }, {
+                                "@type" : "C_TERMINOLOGY_CODE",
+                                "constraint" : [ "at0011" ]
+                              } ]
+                            } ]
+                          } ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0016",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_COUNT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "magnitude",
+                            "existence" : "1..1",
+                            "children" : [ {
+                              "@type" : "C_INTEGER",
+                              "rmTypeName" : "Integer",
+                              "occurrences" : "1..1",
+                              "constraint" : [ {
+                                "lower" : 0,
+                                "upper" : 20,
+                                "lowerIncluded" : true,
+                                "upperIncluded" : true,
+                                "upperUnbounded" : false,
+                                "lowerUnbounded" : false
+                              } ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..1",
+                      "nodeId" : "at0047",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              }, {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "state",
+                "existence" : "0..1",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "ITEM_TREE",
+                  "occurrences" : "1..1",
+                  "nodeId" : "at0048",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "items",
+                    "existence" : "0..1",
+                    "cardinality" : {
+                      "@type" : "CARDINALITY",
+                      "interval" : "0..*",
+                      "ordered" : false,
+                      "unique" : false
+                    },
+                    "children" : [ {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "ELEMENT",
+                      "occurrences" : "0..0",
+                      "nodeId" : "at0049.1",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "value",
+                        "existence" : "0..1",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "DV_TEXT",
+                          "occurrences" : "1..1",
+                          "attributes" : [ ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "existence" : "0..1",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "occurrences" : "1..1",
+          "nodeId" : "at0045",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "existence" : "0..1",
+            "cardinality" : {
+              "@type" : "CARDINALITY",
+              "interval" : "0..*",
+              "ordered" : false,
+              "unique" : false
+            },
+            "children" : [ {
+              "@type" : "ARCHETYPE_SLOT",
+              "rmTypeName" : "CLUSTER",
+              "occurrences" : "0..*",
+              "nodeId" : "at0046",
+              "includes" : [ {
+                "@type" : "ASSERTION",
+                "stringExpression" : "archetype_id/value matches {/.*/}",
+                "expression" : {
+                  "@type" : "BINARY_OPERATOR",
+                  "type" : "BOOLEAN",
+                  "operator" : "matches",
+                  "leftOperand" : {
+                    "@type" : "MODEL_REFERENCE",
+                    "type" : "STRING",
+                    "precedenceOverriden" : false,
+                    "referenceType" : "Attribute",
+                    "path" : "archetype_id/value"
+                  },
+                  "rightOperand" : {
+                    "@type" : "CONSTRAINT",
+                    "type" : "STRING",
+                    "precedenceOverriden" : false,
+                    "referenceType" : "Constraint",
+                    "item" : {
+                      "@type" : "C_STRING",
+                      "constraint" : [ "/.*/" ]
+                    }
+                  },
+                  "precedenceOverriden" : false
+                },
+                "variables" : [ ]
+              } ],
+              "excludes" : [ ],
+              "closed" : false
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "ar-sy" : {
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "*Modified Barthel index(en)",
+            "description" : "*Modification of the Barthel index, used as a functional assessment for activities of daily living (ADL).(en)"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "*Tree(en)",
+            "description" : "*@ internal @(en)"
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "*history(nl)",
+            "description" : "*@ internal @(nl)"
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "*Any event(en)",
+            "description" : "*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.(en)"
+          },
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "*Bladder(en)",
+            "description" : "*Assessment of urinary control over the previous week, occasional accident <= 1 time per week.(en)"
+          },
+          "at0005" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "*Incontinent of catheter(nl)",
+            "description" : "**(nl)"
+          },
+          "at0006" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "*Af en toe een ongelukje (max. 1 keer per 24 uur)(nl)",
+            "description" : "**(nl)"
+          },
+          "at0007" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007",
+            "text" : "*Continent (gedurende meer dan 7 dagen)(nl)",
+            "description" : "**(nl)"
+          },
+          "at0008" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "*Bowels(en)",
+            "description" : "*Over the previous week, occasional accident is once per week.(en)"
+          },
+          "at0009" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009",
+            "text" : "*Baden/douche(nl)",
+            "description" : "*Onafhankelijk = zonder toezicht of hulp in en uit bad stappen en zichzelf wassen.(nl)"
+          },
+          "at0010" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0010",
+            "text" : "*Afhankelijk(nl)",
+            "description" : "**(nl)"
+          },
+          "at0011" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "*Onafinankelik(nl)",
+            "description" : "**(nl)"
+          },
+          "at0012" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012",
+            "text" : "*Dressing(en)",
+            "description" : "*Ability to choose clothes, put them on and fasten them.(en)"
+          },
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "*Afhankelijk(nl)",
+            "description" : "**(nl)"
+          },
+          "at0014" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014",
+            "text" : "*Heeft hulp nodig maar kan oeveer de helft zelf(nl)",
+            "description" : "**(nl)"
+          },
+          "at0016" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016",
+            "text" : "*Totaal(nl)",
+            "description" : "*Totaal Barthel-index voorbeeld.(nl)"
+          },
+          "at0017" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0017",
+            "text" : "*Mobiliteit(nl)",
+            "description" : "*Hulp = een ongetraind persoon, incl. toezicht en morele steun.Onafhankelijk = kan zich verplaatsen in huis of op afdeling; hulpmiddel mag worden gebruikt. Een patiÃ«nt in rolstoel moet zonder hulp met hoeken en deuren kunnen omgaan.(nl)"
+          },
+          "at0018" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0018",
+            "text" : "*Immobile(en)",
+            "description" : "*Person can get less than 50 metres in wheelchair.(en)"
+          },
+          "at0019" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019",
+            "text" : "*Wheel chair independent(en)",
+            "description" : "*Wheelchair independent (including corners).(en)"
+          },
+          "at0020" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020",
+            "text" : "*Walks with help(en)",
+            "description" : "*Person walks with assistance of one person, with physical or verbal assistance.(en)"
+          },
+          "at0021" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021",
+            "text" : "*Transfer(en)",
+            "description" : "*Transfer from bed to chair and back.(en)"
+          },
+          "at0022" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022",
+            "text" : "*Unable, no sitting balance(en)",
+            "description" : "*No sitting balance, a lifting device is used.(en)"
+          },
+          "at0023" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023",
+            "text" : "*Major help, can sit(en)",
+            "description" : "*A strong trained person or 2 people required, patient can sit straight.(en)"
+          },
+          "at0024" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024",
+            "text" : "*Weinig hulp (met hulp van woorden of lichamelijk)(nl)",
+            "description" : "**(nl)"
+          },
+          "at0025" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025",
+            "text" : "*Independent(en)",
+            "description" : "*Person can move from bed to chair independently.(en)"
+          },
+          "at0026" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026",
+            "text" : "*Feeding(en)",
+            "description" : "*Ability to eat food.(en)"
+          },
+          "at0027" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0027",
+            "text" : "*Niet in staat(nl)",
+            "description" : "**(nl)"
+          },
+          "at0028" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028",
+            "text" : "*Heeft hulp nodig bij snijden, smeren van boter, enz.(nl)",
+            "description" : "**(nl)"
+          },
+          "at0029" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0029",
+            "text" : "*Onafhankelijk(nl)",
+            "description" : "**(nl)"
+          },
+          "at0030" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030",
+            "text" : "*Toiletgebruik(nl)",
+            "description" : "*Met hulp = kan zich afvegen en enige van bovenstaande handelingen uitvoeren.Onafhankelijk = in staat om naar toilet te gaan, zich voldoende uit te kleden, schoon te maken, aan te kleden en weg te gaan.(nl)"
+          },
+          "at0031" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0031",
+            "text" : "*Afhankelijk(nl)",
+            "description" : "**(nl)"
+          },
+          "at0032" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0032",
+            "text" : "*Heeft enige hulp nodig maar kan sommige dingen zelf(nl)",
+            "description" : "**(nl)"
+          },
+          "at0033" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0033",
+            "text" : "*Onafhankelijk (op en af, uit- en aankleden, afvegen)(nl)",
+            "description" : "**(nl)"
+          },
+          "at0034" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0034",
+            "text" : "*Grooming(en)",
+            "description" : "*Ability over the previous 24-48 hours to attend to personal hygiene such as brushing teeth, shaving and washing.(en)"
+          },
+          "at0035" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0035",
+            "text" : "*Heeft hulp nodig(nl)",
+            "description" : "**(nl)"
+          },
+          "at0036" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0036",
+            "text" : "*Onafhankelijk (gezicht, haar, tanden, scheren)(nl)",
+            "description" : "**(nl)"
+          },
+          "at0037" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0037",
+            "text" : "*Incontinent(nl)",
+            "description" : "**(nl)"
+          },
+          "at0038" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0038",
+            "text" : "*Continent(nl)",
+            "description" : "**(nl)"
+          },
+          "at0039" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0039",
+            "text" : "*Onafhankelijk(nl)",
+            "description" : "**(nl)"
+          },
+          "at0040" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0040",
+            "text" : "*Trappen(nl)",
+            "description" : "*Trappen.(nl)"
+          },
+          "at0041" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0041",
+            "text" : "*Neit in staat(nl)",
+            "description" : "**(nl)"
+          },
+          "at0042" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0042",
+            "text" : "*Heeft hulp nodig (woorden, lichamelijk of hulpmiddel)(nl)",
+            "description" : "**(nl)"
+          },
+          "at0043" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0043",
+            "text" : "*Onafhankelijk naar boven en naar beneden(nl)",
+            "description" : "**(nl)"
+          },
+          "at0044" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0044",
+            "text" : "*Occasional accident(en)",
+            "description" : "*Less than or equal to once per week.(en)"
+          },
+          "at0045" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0045",
+            "text" : "*Tree(en)",
+            "description" : "*@ internal @(en)"
+          },
+          "at0046" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0046",
+            "text" : "*Extension(en)",
+            "description" : "*Additional information required to capture local content or to align with other reference models/formalisms.(en)",
+            "comment" : "*For example: Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)"
+          },
+          "at0047" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0047",
+            "text" : "*Comment(en)",
+            "description" : "*Additional narrative about the modified Barthel index, not captured in other fields.(en)"
+          },
+          "at0048" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0048",
+            "text" : "*Tree(en)",
+            "description" : "*@ internal @(en)"
+          },
+          "at0049" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0049",
+            "text" : "*Confounding factors(en)",
+            "description" : "*Narrative descripiton of any issues or factors that may impact on the scoring.(en)"
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "*Any event(en)",
+            "description" : "*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.(en)"
+          },
+          "at0049.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0049",
+            "text" : "*Confounding factors(en)",
+            "description" : "*Narrative descripiton of any issues or factors that may impact on the scoring.(en)"
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "*Modified Barthel index(en)",
+            "description" : "*Modification of the Barthel index, used as a functional assessment for activities of daily living (ADL).(en)"
+          }
+        },
+        "nl" : {
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "*Modified Barthel index(en)",
+            "description" : "*Modification of the Barthel index, used as a functional assessment for activities of daily living (ADL).(en)"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "*Tree(en)",
+            "description" : "*@ internal @(en)"
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "History",
+            "description" : "@ internal @"
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "*Any event(en)",
+            "description" : "*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.(en)"
+          },
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "*Bladder(en)",
+            "description" : "*Assessment of urinary control over the previous week, occasional accident <= 1 time per week.(en)"
+          },
+          "at0005" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Incontinent of catheter",
+            "description" : "*"
+          },
+          "at0006" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Af en toe een ongelukje (max. 1 keer per 24 uur)",
+            "description" : "*"
+          },
+          "at0007" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007",
+            "text" : "Continent (gedurende meer dan 7 dagen)",
+            "description" : "*"
+          },
+          "at0008" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "*Bowels(en)",
+            "description" : "*Over the previous week, occasional accident is once per week.(en)"
+          },
+          "at0009" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009",
+            "text" : "Baden/douche",
+            "description" : "Onafhankelijk = zonder toezicht of hulp in en uit bad stappen en zichzelf wassen."
+          },
+          "at0010" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0010",
+            "text" : "Afhankelijk",
+            "description" : "*"
+          },
+          "at0011" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Onafinankelik",
+            "description" : "*"
+          },
+          "at0012" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012",
+            "text" : "*Dressing(en)",
+            "description" : "*Ability to choose clothes, put them on and fasten them.(en)"
+          },
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Afhankelijk",
+            "description" : "*"
+          },
+          "at0014" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014",
+            "text" : "Heeft hulp nodig maar kan oeveer de helft zelf",
+            "description" : "*"
+          },
+          "at0016" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016",
+            "text" : "Totaal",
+            "description" : "Totaal Barthel-index voorbeeld."
+          },
+          "at0017" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0017",
+            "text" : "Mobiliteit",
+            "description" : "Hulp = een ongetraind persoon, incl. toezicht en morele steun.Onafhankelijk = kan zich verplaatsen in huis of op afdeling; hulpmiddel mag worden gebruikt. Een patiÃ«nt in rolstoel moet zonder hulp met hoeken en deuren kunnen omgaan."
+          },
+          "at0018" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0018",
+            "text" : "*Immobile(en)",
+            "description" : "*Person can get less than 50 metres in wheelchair.(en)"
+          },
+          "at0019" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019",
+            "text" : "*Wheel chair independent(en)",
+            "description" : "*Wheelchair independent (including corners).(en)"
+          },
+          "at0020" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020",
+            "text" : "*Walks with help(en)",
+            "description" : "*Person walks with assistance of one person, with physical or verbal assistance.(en)"
+          },
+          "at0021" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021",
+            "text" : "*Transfer(en)",
+            "description" : "*Transfer from bed to chair and back.(en)"
+          },
+          "at0022" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022",
+            "text" : "*Unable, no sitting balance(en)",
+            "description" : "*No sitting balance, a lifting device is used.(en)"
+          },
+          "at0023" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023",
+            "text" : "*Major help, can sit(en)",
+            "description" : "*A strong trained person or 2 people required, patient can sit straight.(en)"
+          },
+          "at0024" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024",
+            "text" : "Weinig hulp (met hulp van woorden of lichamelijk)",
+            "description" : "*"
+          },
+          "at0025" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025",
+            "text" : "*Independent(en)",
+            "description" : "*Person can move from bed to chair independently.(en)"
+          },
+          "at0026" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026",
+            "text" : "*Feeding(en)",
+            "description" : "*Ability to eat food.(en)"
+          },
+          "at0027" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0027",
+            "text" : "Niet in staat",
+            "description" : "*"
+          },
+          "at0028" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028",
+            "text" : "Heeft hulp nodig bij snijden, smeren van boter, enz.",
+            "description" : "*"
+          },
+          "at0029" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0029",
+            "text" : "Onafhankelijk",
+            "description" : "*"
+          },
+          "at0030" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030",
+            "text" : "Toiletgebruik",
+            "description" : "Met hulp = kan zich afvegen en enige van bovenstaande handelingen uitvoeren.Onafhankelijk = in staat om naar toilet te gaan, zich voldoende uit te kleden, schoon te maken, aan te kleden en weg te gaan."
+          },
+          "at0031" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0031",
+            "text" : "Afhankelijk",
+            "description" : "*"
+          },
+          "at0032" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0032",
+            "text" : "Heeft enige hulp nodig maar kan sommige dingen zelf",
+            "description" : "*"
+          },
+          "at0033" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0033",
+            "text" : "Onafhankelijk (op en af, uit- en aankleden, afvegen)",
+            "description" : "*"
+          },
+          "at0034" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0034",
+            "text" : "*Grooming(en)",
+            "description" : "*Ability over the previous 24-48 hours to attend to personal hygiene such as brushing teeth, shaving and washing.(en)"
+          },
+          "at0035" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0035",
+            "text" : "Heeft hulp nodig",
+            "description" : "*"
+          },
+          "at0036" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0036",
+            "text" : "Onafhankelijk (gezicht, haar, tanden, scheren)",
+            "description" : "*"
+          },
+          "at0037" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0037",
+            "text" : "Incontinent",
+            "description" : "*"
+          },
+          "at0038" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0038",
+            "text" : "Continent",
+            "description" : "*"
+          },
+          "at0039" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0039",
+            "text" : "Onafhankelijk",
+            "description" : "*"
+          },
+          "at0040" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0040",
+            "text" : "Trappen",
+            "description" : "Trappen."
+          },
+          "at0041" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0041",
+            "text" : "Neit in staat",
+            "description" : "*"
+          },
+          "at0042" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0042",
+            "text" : "Heeft hulp nodig (woorden, lichamelijk of hulpmiddel)",
+            "description" : "*"
+          },
+          "at0043" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0043",
+            "text" : "Onafhankelijk naar boven en naar beneden",
+            "description" : "*"
+          },
+          "at0044" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0044",
+            "text" : "*Occasional accident(en)",
+            "description" : "*Less than or equal to once per week.(en)"
+          },
+          "at0045" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0045",
+            "text" : "*Tree(en)",
+            "description" : "*@ internal @(en)"
+          },
+          "at0046" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0046",
+            "text" : "*Extension(en)",
+            "description" : "*Additional information required to capture local content or to align with other reference models/formalisms.(en)",
+            "comment" : "*For example: Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)"
+          },
+          "at0047" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0047",
+            "text" : "*Comment(en)",
+            "description" : "*Additional narrative about the modified Barthel index, not captured in other fields.(en)"
+          },
+          "at0048" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0048",
+            "text" : "*Tree(en)",
+            "description" : "*@ internal @(en)"
+          },
+          "at0049" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0049",
+            "text" : "*Confounding factors(en)",
+            "description" : "*Narrative descripiton of any issues or factors that may impact on the scoring.(en)"
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "*Any event(en)",
+            "description" : "*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.(en)"
+          },
+          "at0049.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0049",
+            "text" : "*Confounding factors(en)",
+            "description" : "*Narrative descripiton of any issues or factors that may impact on the scoring.(en)"
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "*Modified Barthel index(en)",
+            "description" : "*Modification of the Barthel index, used as a functional assessment for activities of daily living (ADL).(en)"
+          }
+        },
+        "en" : {
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Modified Barthel index",
+            "description" : "Modification of the Barthel index, used as a functional assessment for activities of daily living (ADL)."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Tree",
+            "description" : "@ internal @"
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "History",
+            "description" : "@ internal @"
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Any event",
+            "description" : "Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."
+          },
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Bladder",
+            "description" : "Assessment of urinary control over the previous week, occasional accident <= 1 time per week."
+          },
+          "at0005" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Incontinent (or unable to manage catheter)",
+            "description" : "Incontinent of urine or catheterised."
+          },
+          "at0006" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Occasional accident",
+            "description" : "Less than or equal to once per week."
+          },
+          "at0007" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007",
+            "text" : "Continent (manages catheter alone)",
+            "description" : "Continent includes self management of catheter."
+          },
+          "at0008" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "Bowels",
+            "description" : "Over the previous week, occasional accident is once per week."
+          },
+          "at0009" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009",
+            "text" : "Bathing",
+            "description" : "Independent = without supervision or help when getting in and out of the bath and when washing."
+          },
+          "at0010" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0010",
+            "text" : "Dependent",
+            "description" : "Needs assistance with baths or showers."
+          },
+          "at0011" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Independent",
+            "description" : "No help required when getting in and out of the bath or when washing."
+          },
+          "at0012" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012",
+            "text" : "Dressing",
+            "description" : "Ability to choose clothes, put them on and fasten them."
+          },
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Dependent",
+            "description" : "Requires assistance choosing and putting on clothes."
+          },
+          "at0014" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014",
+            "text" : "Needs help but can do about half unaided",
+            "description" : "Needs help only with buttons, zippers but can put on clothes unaided."
+          },
+          "at0016" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016",
+            "text" : "Total score",
+            "description" : "Sum of the individual scores assigned for each of the contributing variables.",
+            "comment" : "A score of 0-9 indicates high dependency, 10-19 moderate dependency and 20 is independent."
+          },
+          "at0017" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0017",
+            "text" : "Mobility",
+            "description" : "Ability to get about the house or institution."
+          },
+          "at0018" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0018",
+            "text" : "Immobile",
+            "description" : "Person can get less than 50 metres in wheelchair."
+          },
+          "at0019" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019",
+            "text" : "Wheel chair independent",
+            "description" : "Wheelchair independent (including corners)."
+          },
+          "at0020" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020",
+            "text" : "Walks with help",
+            "description" : "Person walks with assistance of one person, with physical or verbal assistance."
+          },
+          "at0021" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021",
+            "text" : "Transfer",
+            "description" : "Transfer from bed to chair and back."
+          },
+          "at0022" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022",
+            "text" : "Unable, no sitting balance",
+            "description" : "No sitting balance, a lifting device is used."
+          },
+          "at0023" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023",
+            "text" : "Major help, can sit",
+            "description" : "A strong trained person or 2 people required, patient can sit straight."
+          },
+          "at0024" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024",
+            "text" : "Minor help",
+            "description" : "A person is required for supervision or some help."
+          },
+          "at0025" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025",
+            "text" : "Independent",
+            "description" : "Person can move from bed to chair independently."
+          },
+          "at0026" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026",
+            "text" : "Feeding",
+            "description" : "Ability to eat food."
+          },
+          "at0027" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0027",
+            "text" : "Unable to eat unassisted",
+            "description" : "Requires manual feeding."
+          },
+          "at0028" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028",
+            "text" : "Needs help",
+            "description" : "Requires help cutting, spreading butter or requires modified diet - able to eat alone."
+          },
+          "at0029" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0029",
+            "text" : "Independent",
+            "description" : "Able to eat alone."
+          },
+          "at0030" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030",
+            "text" : "Toilet use",
+            "description" : "Ability to use toilet over the previous 48 hours."
+          },
+          "at0031" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0031",
+            "text" : "Dependent",
+            "description" : "Person is completely dependent of others to use the toilet."
+          },
+          "at0032" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0032",
+            "text" : "Needs some help but can do some tasks alone",
+            "description" : "Person is self-supporting in some toileting tasks."
+          },
+          "at0033" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0033",
+            "text" : "Independent (on & off, dressing, wiping)",
+            "description" : "Person is fully self-supporting in all toileting tasks."
+          },
+          "at0034" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0034",
+            "text" : "Grooming",
+            "description" : "Ability over the previous 24-48 hours to attend to personal hygiene such as brushing teeth, shaving and washing."
+          },
+          "at0035" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0035",
+            "text" : "Needs help",
+            "description" : "Needs help with personal care."
+          },
+          "at0036" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0036",
+            "text" : "Independent",
+            "description" : "Able to brush teeth, hair, wash face, shave."
+          },
+          "at0037" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0037",
+            "text" : "Incontinent (or requires enemas)",
+            "description" : "Incontinent of faeces or requires enemas."
+          },
+          "at0038" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0038",
+            "text" : "Continent",
+            "description" : "Continent of faeces."
+          },
+          "at0039" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0039",
+            "text" : "Independent",
+            "description" : "Person can use any aid (not wheelchair) around the house or ward."
+          },
+          "at0040" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0040",
+            "text" : "Stairs",
+            "description" : "Ability to negotiate stairs."
+          },
+          "at0041" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0041",
+            "text" : "Unable",
+            "description" : "Unable to use stairs."
+          },
+          "at0042" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0042",
+            "text" : "Needs help",
+            "description" : "Verbal, physical or other assistance."
+          },
+          "at0043" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0043",
+            "text" : "Independent",
+            "description" : "Can carry aid alone if required."
+          },
+          "at0044" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0044",
+            "text" : "Occasional accident",
+            "description" : "Less than or equal to once per week."
+          },
+          "at0045" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0045",
+            "text" : "Tree",
+            "description" : "@ internal @"
+          },
+          "at0046" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0046",
+            "text" : "Extension",
+            "description" : "Additional information required to capture local content or to align with other reference models/formalisms.",
+            "comment" : "For example: Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents."
+          },
+          "at0047" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0047",
+            "text" : "Comment",
+            "description" : "Additional narrative about the modified Barthel index, not captured in other fields."
+          },
+          "at0048" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0048",
+            "text" : "Tree",
+            "description" : "@ internal @"
+          },
+          "at0049" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0049",
+            "text" : "Confounding factors",
+            "description" : "Narrative descripiton of any issues or factors that may impact on the scoring."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Any event",
+            "description" : "Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time."
+          },
+          "at0049.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0049",
+            "text" : "Confounding factors",
+            "description" : "Narrative descripiton of any issues or factors that may impact on the scoring."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Modified Barthel index",
+            "description" : "Modification of the Barthel index, used as a functional assessment for activities of daily living (ADL)."
+          }
+        },
+        "ru" : {
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "*Modified Barthel index(en)",
+            "description" : "*Modification of the Barthel index, used as a functional assessment for activities of daily living (ADL).(en)"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "*Tree(en)",
+            "description" : "*@ internal @(en)"
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "История",
+            "description" : "Внутренний элемент."
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "*Any event(en)",
+            "description" : "*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.(en)"
+          },
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "*Bladder(en)",
+            "description" : "*Assessment of urinary control over the previous week, occasional accident <= 1 time per week.(en)"
+          },
+          "at0005" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Недержание или калоприёмник",
+            "description" : "*"
+          },
+          "at0006" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Иногда аварии (макс. 1 раз в 24 часа)",
+            "description" : "*"
+          },
+          "at0007" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007",
+            "text" : "Запор (задержка стула более 7 дней)",
+            "description" : "*"
+          },
+          "at0008" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "*Bowels(en)",
+            "description" : "*Over the previous week, occasional accident is once per week.(en)"
+          },
+          "at0009" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009",
+            "text" : "Пользование ванной/душем",
+            "description" : "Самостоятельно: без присмотра и помощи может дойти до ванной  и самостоятельно моется."
+          },
+          "at0010" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0010",
+            "text" : "Невозможно",
+            "description" : "*"
+          },
+          "at0011" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Самостоятельно",
+            "description" : "*"
+          },
+          "at0012" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012",
+            "text" : "*Dressing(en)",
+            "description" : "*Ability to choose clothes, put them on and fasten them.(en)"
+          },
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Невозможно",
+            "description" : "*"
+          },
+          "at0014" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014",
+            "text" : "Нужна помощь с кнопками, пуговицами, молниями",
+            "description" : "*"
+          },
+          "at0016" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016",
+            "text" : "Общий",
+            "description" : "Общий индекс Бартеля - значение."
+          },
+          "at0017" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0017",
+            "text" : "Подвижность",
+            "description" : "Прогулки, по неровной поверхности."
+          },
+          "at0018" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0018",
+            "text" : "*Immobile(en)",
+            "description" : "*Person can get less than 50 metres in wheelchair.(en)"
+          },
+          "at0019" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019",
+            "text" : "*Wheel chair independent(en)",
+            "description" : "*Wheelchair independent (including corners).(en)"
+          },
+          "at0020" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020",
+            "text" : "*Walks with help(en)",
+            "description" : "*Person walks with assistance of one person, with physical or verbal assistance.(en)"
+          },
+          "at0021" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021",
+            "text" : "*Transfer(en)",
+            "description" : "*Transfer from bed to chair and back.(en)"
+          },
+          "at0022" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022",
+            "text" : "*Unable, no sitting balance(en)",
+            "description" : "*No sitting balance, a lifting device is used.(en)"
+          },
+          "at0023" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023",
+            "text" : "*Major help, can sit(en)",
+            "description" : "*A strong trained person or 2 people required, patient can sit straight.(en)"
+          },
+          "at0024" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024",
+            "text" : "С незначительной физической или словесной помощью",
+            "description" : "*"
+          },
+          "at0025" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025",
+            "text" : "*Independent(en)",
+            "description" : "*Person can move from bed to chair independently.(en)"
+          },
+          "at0026" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026",
+            "text" : "*Feeding(en)",
+            "description" : "*Ability to eat food.(en)"
+          },
+          "at0027" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0027",
+            "text" : "Невозможно",
+            "description" : "*"
+          },
+          "at0028" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028",
+            "text" : "Нужна помощь: нарезать, намазать масло и т.д.",
+            "description" : "*"
+          },
+          "at0029" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0029",
+            "text" : "Самостоятельно",
+            "description" : "*"
+          },
+          "at0030" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030",
+            "text" : "Пользование туалетом",
+            "description" : "Самостоятельно - может сам пойти в туалет, достаточно раздеться, соблюсти чистоту, одеться и уйти."
+          },
+          "at0031" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0031",
+            "text" : "Невозможно",
+            "description" : "*"
+          },
+          "at0032" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0032",
+            "text" : "С посторонней помощью, некоторые действия - самостоятельно",
+            "description" : "*"
+          },
+          "at0033" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0033",
+            "text" : "Независимый (включения и выключения, одевания и раздевания, вытирания",
+            "description" : "*"
+          },
+          "at0034" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0034",
+            "text" : "*Grooming(en)",
+            "description" : "*Ability over the previous 24-48 hours to attend to personal hygiene such as brushing teeth, shaving and washing.(en)"
+          },
+          "at0035" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0035",
+            "text" : "Требуется помощь",
+            "description" : "*"
+          },
+          "at0036" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0036",
+            "text" : "Полностью самостоятельно (мытьё лица, волос, бритьё, чистка зубов)",
+            "description" : "*"
+          },
+          "at0037" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0037",
+            "text" : "Недержание",
+            "description" : "*"
+          },
+          "at0038" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0038",
+            "text" : "Задержка",
+            "description" : "*"
+          },
+          "at0039" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0039",
+            "text" : "Самостоятельно",
+            "description" : "*"
+          },
+          "at0040" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0040",
+            "text" : "Лестницы",
+            "description" : "Лестницы."
+          },
+          "at0041" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0041",
+            "text" : "Невозможно",
+            "description" : "*"
+          },
+          "at0042" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0042",
+            "text" : "С помощью слов или поддерживающих устройств",
+            "description" : "*"
+          },
+          "at0043" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0043",
+            "text" : "Самостоятельно поднимается и опускается",
+            "description" : "*"
+          },
+          "at0044" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0044",
+            "text" : "*Occasional accident(en)",
+            "description" : "*Less than or equal to once per week.(en)"
+          },
+          "at0045" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0045",
+            "text" : "*Tree(en)",
+            "description" : "*@ internal @(en)"
+          },
+          "at0046" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0046",
+            "text" : "*Extension(en)",
+            "description" : "*Additional information required to capture local content or to align with other reference models/formalisms.(en)",
+            "comment" : "*For example: Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)"
+          },
+          "at0047" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0047",
+            "text" : "*Comment(en)",
+            "description" : "*Additional narrative about the modified Barthel index, not captured in other fields.(en)"
+          },
+          "at0048" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0048",
+            "text" : "*Tree(en)",
+            "description" : "*@ internal @(en)"
+          },
+          "at0049" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0049",
+            "text" : "*Confounding factors(en)",
+            "description" : "*Narrative descripiton of any issues or factors that may impact on the scoring.(en)"
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "*Any event(en)",
+            "description" : "*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.(en)"
+          },
+          "at0049.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0049",
+            "text" : "*Confounding factors(en)",
+            "description" : "*Narrative descripiton of any issues or factors that may impact on the scoring.(en)"
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "*Modified Barthel index(en)",
+            "description" : "*Modification of the Barthel index, used as a functional assessment for activities of daily living (ADL).(en)"
+          }
+        },
+        "nb" : {
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "*Modified Barthel index(en)",
+            "description" : "*Modification of the Barthel index, used as a functional assessment for activities of daily living (ADL).(en)"
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "*Tree(en)",
+            "description" : "*@ internal @(en)"
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "History",
+            "description" : "@ internal @"
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Uspesifisert hendelse",
+            "description" : "Standard, uspesifisert tidspunkt eller tidsintervall som kan defineres mer eksplisitt i en template eller i en applikasjon."
+          },
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "*Bladder(en)",
+            "description" : "*Assessment of urinary control over the previous week, occasional accident <= 1 time per week.(en)"
+          },
+          "at0005" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Helt inkontinent",
+            "description" : "Helt inkontinent eller trenger permanent kateter."
+          },
+          "at0006" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Nedsatt kontroll",
+            "description" : "Nedsatt kontroll og enkelte \"uhell\" eller holder seg tørr med uridom eller kateter, men trenger hjelp for å bruke dette."
+          },
+          "at0007" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007",
+            "text" : "Kontinent",
+            "description" : "Holder seg evt. tørr ved bruk av uridom \r\neller mestrer bruk av kateter på egen hånd."
+          },
+          "at0008" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "*Bowels(en)",
+            "description" : "*Over the previous week, occasional accident is once per week.(en)"
+          },
+          "at0009" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009",
+            "text" : "Bading/dusj",
+            "description" : "Evne til å bade eller dusje på egen hånd."
+          },
+          "at0010" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0010",
+            "text" : "Trenger hjelp",
+            "description" : "Trenger hjelp."
+          },
+          "at0011" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Selvhjulpen",
+            "description" : "Helt selvhjulpen."
+          },
+          "at0012" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012",
+            "text" : "*Dressing(en)",
+            "description" : "*Ability to choose clothes, put them on and fasten them.(en)"
+          },
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Trenger hjelp til mer enn halvparten",
+            "description" : "Trenger hjelp til mer enn halvparten ved påkledning."
+          },
+          "at0014" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014",
+            "text" : "Trenger hjelp, men klarer halvparten innen rimelig tid",
+            "description" : "Trenger hjelp, men klarer halvparten innen rimelig tid."
+          },
+          "at0016" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016",
+            "text" : "Sumskår",
+            "description" : "Summen av de 10 elementene i Barthel ADL-indeks. Tall på 0-9 indikerer høyt hjelpebehov, 10-19 moderat hjelpebehov og 20 er selvhjulpen.",
+            "comment" : "Dette feltet skal ikke brukes dersom man kun benytter utvalgte felt i arketypen."
+          },
+          "at0017" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0017",
+            "text" : "Mobilitet",
+            "description" : "Evne til å forflytte seg til fots eller i rullestol."
+          },
+          "at0018" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0018",
+            "text" : "*Immobile(en)",
+            "description" : "*Person can get less than 50 metres in wheelchair.(en)"
+          },
+          "at0019" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019",
+            "text" : "*Wheel chair independent(en)",
+            "description" : "*Wheelchair independent (including corners).(en)"
+          },
+          "at0020" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020",
+            "text" : "*Walks with help(en)",
+            "description" : "*Person walks with assistance of one person, with physical or verbal assistance.(en)"
+          },
+          "at0021" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021",
+            "text" : "*Transfer(en)",
+            "description" : "*Transfer from bed to chair and back.(en)"
+          },
+          "at0022" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022",
+            "text" : "*Unable, no sitting balance(en)",
+            "description" : "*No sitting balance, a lifting device is used.(en)"
+          },
+          "at0023" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023",
+            "text" : "*Major help, can sit(en)",
+            "description" : "*A strong trained person or 2 people required, patient can sit straight.(en)"
+          },
+          "at0024" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024",
+            "text" : "Klarer forflytning med litt hjelp eller tilsyn",
+            "description" : "Klarer forflytning med litt hjelp eller tilsyn."
+          },
+          "at0025" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025",
+            "text" : "*Independent(en)",
+            "description" : "*Person can move from bed to chair independently.(en)"
+          },
+          "at0026" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026",
+            "text" : "*Feeding(en)",
+            "description" : "*Ability to eat food.(en)"
+          },
+          "at0027" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0027",
+            "text" : "Helt avhengig av hjelp",
+            "description" : "Helt avhengig av hjelp."
+          },
+          "at0028" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028",
+            "text" : "Behov for noe hjelp",
+            "description" : "Behov for noe hjelp, f.eks. til å skjære opp maten."
+          },
+          "at0029" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0029",
+            "text" : "Selvhjulpen",
+            "description" : "Helt selvhjulpen. Kan bruke nødvendige hjelpemidler \r\nog spiser innen rimelig tid."
+          },
+          "at0030" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030",
+            "text" : "Toalettbesøk",
+            "description" : "Evne til å gå på toalettet."
+          },
+          "at0031" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0031",
+            "text" : "Kan ikke bruke toalett",
+            "description" : "Kan ikke bruke toalett."
+          },
+          "at0032" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0032",
+            "text" : "Trenger hjelp",
+            "description" : "Trenger hjelp til forflytning, klær, tørke seg."
+          },
+          "at0033" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0033",
+            "text" : "Selvhjulpen",
+            "description" : "Selvhjulpen ved toalettbesøk eller bruk av toalettstol. Ordner klær, tørker seg, spyler toalettet eller tømmer \r\nbekken."
+          },
+          "at0034" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0034",
+            "text" : "*Grooming(en)",
+            "description" : "*Ability over the previous 24-48 hours to attend to personal hygiene such as brushing teeth, shaving and washing.(en)"
+          },
+          "at0035" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0035",
+            "text" : "Trenger hjelp",
+            "description" : "Trenger hjelp til en eller flere oppgaver."
+          },
+          "at0036" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0036",
+            "text" : "Selvhjulpen",
+            "description" : "Selvhjulpen. Klarer å vaske ansiktet, kjemme håret, \r\npusse tenner og barbere seg."
+          },
+          "at0037" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0037",
+            "text" : "Helt inkontinent",
+            "description" : "Helt inkontinent eller hyppige \"uhell\"."
+          },
+          "at0038" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0038",
+            "text" : "Kontinent",
+            "description" : "Klarer selv evt. å sette stikkpille/klyx."
+          },
+          "at0039" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0039",
+            "text" : "Kan gå uten hjelp, evt med stokk/krykker",
+            "description" : "Klarer å gå 50 meter, kan bruke stokk eller krykker, men ikke annet ganghjelpemiddel."
+          },
+          "at0040" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0040",
+            "text" : "Trappegang",
+            "description" : "Evne til å gå i trapper."
+          },
+          "at0041" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0041",
+            "text" : "Kan ikke gå i trapp",
+            "description" : "Kan ikke gå i trapp."
+          },
+          "at0042" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0042",
+            "text" : "Trenger hjelp/tilsyn",
+            "description" : "Trenger hjelp/tilsyn av en person."
+          },
+          "at0043" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0043",
+            "text" : "Selvhjulpen",
+            "description" : "Kan evt. bruke ganghjelpemidler."
+          },
+          "at0044" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0044",
+            "text" : "Nedsatt kontroll",
+            "description" : "Nedsatt kontroll og enkelte \"uhell\" eller trenger hjelp til evt. å sette stikkpiller/klyx."
+          },
+          "at0045" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0045",
+            "text" : "*Tree(en)",
+            "description" : "*@ internal @(en)"
+          },
+          "at0046" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0046",
+            "text" : "Tilleggsinformasjon",
+            "description" : "Ytterligere informasjon som trengs for å kunne registrere lokalt definert innhold eller for å tilpasse til andre referansemodeller/formalismer.",
+            "comment" : "For eksempel lokale informasjonsbehov eller ytterligere metadata for å kunne tilpasse til tilsvarende konsepter i FHIR eller CIMI."
+          },
+          "at0047" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0047",
+            "text" : "*Comment(en)",
+            "description" : "*Additional narrative about the modified Barthel index, not captured in other fields.(en)"
+          },
+          "at0048" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0048",
+            "text" : "*Tree(en)",
+            "description" : "*@ internal @(en)"
+          },
+          "at0049" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0049",
+            "text" : "Konfunderende faktorer",
+            "description" : "Fritekstbeskrivelse av problemer eller faktorer som kan ha påvirkning på skåringen."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Uspesifisert hendelse",
+            "description" : "Standard, uspesifisert tidspunkt eller tidsintervall som kan defineres mer eksplisitt i en template eller i en applikasjon."
+          },
+          "at0049.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0049",
+            "text" : "Konfunderende faktorer",
+            "description" : "Fritekstbeskrivelse av problemer eller faktorer som kan ha påvirkning på skåringen."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "*Modified Barthel index(en)",
+            "description" : "*Modification of the Barthel index, used as a functional assessment for activities of daily living (ADL).(en)"
+          }
+        },
+        "de" : {
+          "at0000" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Modifizierter Barthel-Index",
+            "description" : "Änderung des Barthel-Index, der als funktionelle Bewertung für Alltagsaktivitäten (ADL) verwendet wird."
+          },
+          "at0001" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0001",
+            "text" : "Tree",
+            "description" : "@ internal @"
+          },
+          "at0002" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0002",
+            "text" : "History",
+            "description" : "@ internal @"
+          },
+          "at0003" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Beliebiges Ereignis",
+            "description" : "Standardwert, ein undefinierter/s Zeitpunkt oder Intervallereignis, das explizit im Template oder zur Laufzeit der Anwendung definiert werden kann."
+          },
+          "at0004" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0004",
+            "text" : "Harnblase",
+            "description" : "Beurteilung der Urinkontrolle in der Vorwoche, gelegentlicher Urinverlust <= 1 Mal pro Woche."
+          },
+          "at0005" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0005",
+            "text" : "Inkontinent",
+            "description" : "Urininkontinenz oder katheterisiert."
+          },
+          "at0006" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0006",
+            "text" : "Gelegentlicher Urinverlust",
+            "description" : "Weniger als oder gleich einmal pro Woche."
+          },
+          "at0007" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007",
+            "text" : "Kontinent (Selbstkatheterismus)",
+            "description" : "Kontinent, umfasst eigenständige Anwendung von Katheter."
+          },
+          "at0008" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0008",
+            "text" : "Darm",
+            "description" : "In der Vorwoche kam es einmal pro Woche zu gelegentlichen Kontrollverlusten."
+          },
+          "at0009" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0009",
+            "text" : "Baden",
+            "description" : "Selbstständig = ohne Aufsicht oder Hilfe beim Ein- und Aussteigen aus dem Bad und beim Waschen."
+          },
+          "at0010" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0010",
+            "text" : "Abhängig",
+            "description" : "Benötigt Unterstützung beim Baden oder Duschen."
+          },
+          "at0011" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0011",
+            "text" : "Selbstständig",
+            "description" : "Keine Hilfe beim An- und Auskleiden im Bad oder beim Waschen erforderlich."
+          },
+          "at0012" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0012",
+            "text" : "An- und Auskleiden",
+            "description" : "Fähigkeit, Kleidung auszuwählen, anzuziehen und zu befestigen."
+          },
+          "at0013" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0013",
+            "text" : "Abhängig",
+            "description" : "Benötigt Unterstützung beim Auswählen und Anziehen von Kleidung."
+          },
+          "at0014" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0014",
+            "text" : "Benötigt Hilfe, kann aber ungefähr die Hälfte ohne Hilfe tun",
+            "description" : "Benötigt Hilfe nur mit Knöpfen, Reißverschlüssen, kann aber ohne fremde Hilfe Kleidung anziehen."
+          },
+          "at0016" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0016",
+            "text" : "Gesamtpunktzahl",
+            "description" : "Summe der einzelnen Bewertungen, die für jede der beitragenden Variablen zugewiesen wurden.",
+            "comment" : "Ein Wert von 0-9 zeigt eine hohe Abhängigkeit an, 10-19 eine moderate Abhängigkeit und mit 20 ist sebstständig."
+          },
+          "at0017" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0017",
+            "text" : "Mobilität",
+            "description" : "Fähigkeit, sich im Haus oder in der Einrichtung zurechtzufinden."
+          },
+          "at0018" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0018",
+            "text" : "Immobil",
+            "description" : "Person kann weniger als 50 Meter im Rollstuhl zurücklegen."
+          },
+          "at0019" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0019",
+            "text" : "Unabhängig mit Rollstuhl",
+            "description" : "Unabhängig mit Rollstuhl (einschließlich Ecken)"
+          },
+          "at0020" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0020",
+            "text" : "Unterstütztes Gehen",
+            "description" : "Die Person geht mit Hilfe einer Person, mit körperlicher oder verbaler Hilfe."
+          },
+          "at0021" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021",
+            "text" : "Transfer",
+            "description" : "Transfer vom Bett zum Stuhl und zurück."
+          },
+          "at0022" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022",
+            "text" : "Unfähig, keine Sitzbalance",
+            "description" : "Keine Sitzbalance, eine Hebevorrichtung wird verwendet."
+          },
+          "at0023" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0023",
+            "text" : "Mit großer Hilfe, kann sitzen",
+            "description" : "Eine körperlich kräftige Person oder 2 Personen erforderlich, der Patient kann gerade sitzen."
+          },
+          "at0024" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024",
+            "text" : "Mit kleiner Hilfe",
+            "description" : "Eine Person ist zur Überwachung oder Hilfe erforderlich."
+          },
+          "at0025" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0025",
+            "text" : "Selbstständig",
+            "description" : "Die Person kann sich selbstständig vom Bett zum Stuhl bewegen."
+          },
+          "at0026" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0026",
+            "text" : "Essen",
+            "description" : "Fähigkeit zu essen."
+          },
+          "at0027" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0027",
+            "text" : "Unfähig allein zu essen",
+            "description" : "Erfordert manuelle Fütterung."
+          },
+          "at0028" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0028",
+            "text" : "Benötigt Hilfe",
+            "description" : "Benötigt Hilfe beim Schneiden, Butter auftragen oder erfordert eine veränderte Ernährung - kann alleine essen."
+          },
+          "at0029" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0029",
+            "text" : "Selbständig",
+            "description" : "Fähig, allein zu essen."
+          },
+          "at0030" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0030",
+            "text" : "Toilettenbenutzung",
+            "description" : "Fähigkeit, die Toilette in den letzten 48 Stunden zu benutzen."
+          },
+          "at0031" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0031",
+            "text" : "Abhängig",
+            "description" : "Die Person ist völlig von anderen abhängig, um die Toilette zu benutzen."
+          },
+          "at0032" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0032",
+            "text" : "Benötigt Hilfe, kann aber einige Aufgaben alleine erledigen",
+            "description" : "Die Person ist selbstständig bei einigen Toilettenaufgaben."
+          },
+          "at0033" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0033",
+            "text" : "Selbständig (Hinsetzen & Aufstehen, Anziehen, Abwischen)",
+            "description" : "Die Person ist bei allen Toilettenaufgaben völlig selbständig."
+          },
+          "at0034" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0034",
+            "text" : "Körperpflege",
+            "description" : "Fähigkeit in den letzten 24-48 Stunden, sich um persönliche Hygiene wie Zähneputzen, Rasieren und Waschen zu kümmern."
+          },
+          "at0035" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0035",
+            "text" : "Benötigt Hilfe",
+            "description" : "Benötigt Hilfe bei der Körperpflege."
+          },
+          "at0036" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0036",
+            "text" : "Selbständig",
+            "description" : "Kann Zähne putzen, Haare und Gesicht waschen, sich rasieren."
+          },
+          "at0037" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0037",
+            "text" : "Inkontinent (oder erfordert Einläufe)",
+            "description" : "Stuhlinkontinenz oder erfordert Einläufe."
+          },
+          "at0038" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0038",
+            "text" : "Kontinent",
+            "description" : "Stuhlkontinenz."
+          },
+          "at0039" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0039",
+            "text" : "Selbstständig",
+            "description" : "Die Person kann jedes Hilfsmittel (nicht Rollstuhl) rund um das Haus oder die Station benutzen."
+          },
+          "at0040" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0040",
+            "text" : "Treppe",
+            "description" : "Fähigkeit, Treppen zu steigen."
+          },
+          "at0041" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0041",
+            "text" : "Unfähig",
+            "description" : "Unfähig, Treppen zu steigen."
+          },
+          "at0042" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0042",
+            "text" : "Benötigt Hilfe",
+            "description" : "Mündliche, körperliche oder sonstige Unterstützung."
+          },
+          "at0043" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0043",
+            "text" : "Selbstständig",
+            "description" : "Kann alleine, mit Hilfsmitteln bei Bedarf."
+          },
+          "at0044" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0044",
+            "text" : "Gelegentlicher Stuhlverlust",
+            "description" : "Weniger als oder gleich einmal pro Woche."
+          },
+          "at0045" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0045",
+            "text" : "Tree",
+            "description" : "@ internal @"
+          },
+          "at0046" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0046",
+            "text" : "Erweiterung",
+            "description" : "Zusätzliche Informationen zur Erfassung lokaler Inhalte oder Anpassung an andere Referenzmodelle/Formalismen.",
+            "comment" : "Zum Beispiel: Lokaler Informationsbedarf oder zusätzliche Metadaten zur Anpassung an FHIR-Ressourcen oder CIMI-Modelle."
+          },
+          "at0047" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0047",
+            "text" : "Kommentar",
+            "description" : "Zusätzliche Beschreibung des modifizierten Barthel-Index, die in anderen Feldern nicht dargestellt wurde."
+          },
+          "at0048" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0048",
+            "text" : "Tree",
+            "description" : "@ internal @"
+          },
+          "at0049" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0049",
+            "text" : "Einflussfaktoren",
+            "description" : "Beschreibung aller Probleme oder Faktoren, die sich auf die Bewertung auswirken können."
+          },
+          "at0003.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0003",
+            "text" : "Beliebiges Ereignis",
+            "description" : "Standardwert, ein undefinierter/s Zeitpunkt oder Intervallereignis, das explizit im Template oder zur Laufzeit der Anwendung definiert werden kann."
+          },
+          "at0049.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0049",
+            "text" : "Einflussfaktoren",
+            "description" : "Beschreibung aller Probleme oder Faktoren, die sich auf die Bewertung auswirken können."
+          },
+          "at0000.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0000",
+            "text" : "Modifizierter Barthel-Index",
+            "description" : "Änderung des Barthel-Index, der als funktionelle Bewertung für Alltagsaktivitäten (ADL) verwendet wird."
+          }
+        }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "babaad62-d01b-4987-85aa-1831f976b2e9",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Natalia Strauch",
+        "organisation" : "Medizinische Hochschule Hannover",
+        "email" : "Strauch.Natalia@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ru"
+      },
+      "author" : {
+        "name" : "Igor Lizunov",
+        "email" : "i.lizunov@infinnity.ru"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Silje Ljosland Bakke",
+        "organisation" : "Nasjonal IKT HF"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ar-sy"
+      },
+      "author" : {
+        "name" : "Mona Saleh"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nl"
+      },
+      "author" : {
+        "name" : "????"
+      },
+      "otherDetails" : { }
+    } ]
+  } ],
+  "originalLanguage" : {
+    "terminologyId" : {
+      "value" : "ISO_639-1"
+    },
+    "codeString" : "en"
+  },
+  "translations" : [ {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "de"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "fi"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sv"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "es-ar"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nb"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ko"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "pt-br"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "sl"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "ar-sy"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "it"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "nl"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  }, {
+    "@type" : "TRANSLATION_DETAILS",
+    "language" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "zh"
+    },
+    "author" : { },
+    "otherDetails" : { }
+  } ]
+}
