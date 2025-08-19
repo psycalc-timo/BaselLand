@@ -7,6 +7,11 @@ concept
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			author = <
+			>
+		>
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
 			author = <
@@ -53,6 +58,10 @@ description
 	lifecycle_state = <"published">
 	other_contributors = <"Morten Aas, Oslo Universitetssykehus, Norway","Tomas Alme, DIPS, Norway","Ole Andreas Bjordal, Webmed, Norway","Vebjørn Arntzen, Oslo universitetssykehus HF, Norway (Nasjonal IKT redaktør)","Silje Ljosland Bakke, Nasjonal IKT HF, Norway (openEHR Editor)","Lisbeth Dahlhaug, Helse Midt - Norge IT, Norway","Hildegard Franke, freshEHR Clinical Informatics Ltd., United Kingdom","Heather Grain, Llewelyn Grain Informatics, Australia","Cecilie Graver, Oslo universitetssykehus HF, Norway","Daniel Habashi, PasientSky AS, Norway","Annette Hole Sjøborg, DIPS ASA, Norway","Hilde Hollås, DIPS ASA, Norway","Evelyn Hovenga, EJSH Consulting, Australia","Tom Jarl Jakobsen, Helse Bergen, Norway","Lars Morgan Karlsen, DIPS ASA, Norway","Nils Kolstrup, Skansen Legekontor og Nasjonalt Senter for samhandling og telemedisin, Norway","Heather Leslie, Atomica Informatics, Australia (openEHR Editor)","Siv Marie Lien, DIPS ASA, Norway","Hildegard McNicoll, freshEHR Clinical Informatics Ltd., United Kingdom","Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (openEHR Editor)","Bjørn Næss, DIPS ASA, Norway","Andrej Orel, Marand d.o.o., Slovenia","Rune Pedersen, Universitetssykehuset i Nord Norge, Norway","Vladimir Pizzo, Hospital Sírio Libanês, Brazil","Tanja Riise, Nasjonal IKT HF, Norway","Anoop Shah, University College London, United Kingdom","Arild Stangeland, Helse Bergen, Norway","Norwegian Review Summary, Nasjonal IKT HF, Norway","Nyree Taylor, Ocean Informatics, Australia","Tesfay Teame, OUS, Norway","John Tore Valand, Helse Bergen, Norway">
 	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			copyright = <"© openEHR Foundation">
+		>
 		["sv"] = <
 			language = <[ISO_639-1::sv]>
 			purpose = <"Används för att dokumentera ett tillstånd eller status hos en individ som är kliniskt signifikant och unik eller idiosynkratisk för den här individen, och anses vara vital information i samband med beslut om behandling.">
@@ -75,27 +84,6 @@ Exempel på tillstånd som berättigar skapandet av en försiktighetsåtgärder 
 
 Not to be used to record decisions about limitations on the individuals care or future interventions or the individuals preferences of future medical treatment and care. Use EVALUATION.advance_intervention_decisions and EVALUATION.advance_care_directive respectively for this purpose.(en)">
 		>
-		["nb"] = <
-			language = <[ISO_639-1::nb]>
-			purpose = <"For å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutninger om behandling.">
-			keywords = <"forsiktighetshensyn","forhindre","unngå","uønsket hendelse","forebygging","forsiktighet","advarsel","varsel">
-			use = <"Brukes for å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutning om behandling.
-
-Denne arketypen bør regnes som en viktig arketype for beslutningsstøttesystemer i forbindelse med forordning av nye kliniske intervensjoner.
-
-Eksempler på tilstander som kan være grunnlag for å registrere forholdsregler kan være:
-- Immunhemmende/-modulerende behandling - knyttet til en ordinasjon av kjemoterapi eller steroider, eller en leukemidiagnose
-- Nyresvikt - knyttet til nyrefunksjonstester eller en formell nyresviktdiagnose.
-- Står i transplantasjonskø
-- Pågående regelmessig behandling, som strålebehandling eller dialyse
-- Har fått transplantert et organ eller implantert metall i kroppen.
-- Pågående utredning/oppfølging av mistenkt eller verifisert malign lidelse.
-- Deltagelse i klinisk studie.
-- Står på blodfortynnende behandling.">
-			misuse = <"Skal ikke brukes for å registrere en klinisk intervensjon (f.eks. en undersøkelse eller behandling) som ikke må utføres på grunn av sannsynligheten eller muligheten for skade på individet. Bruk EVALUATION.contraindication (Norsk: Kontraindikasjon) for dette formålet.
-
-Skal ikke brukes for beslutninger om avgrensing av behandling eller fremtidige intervensjoner, eller for å registrere individets preferanser om fremtidig behandling og omsorg. Bruk henholdsvis EVALUATION.advance_intervention_decisions (Behandlingsbegrensning) og EVALUATION.advance_care_directive (Fremtidig behandlingsvalg) for dette formålet.">
-		>
 		["es-ar"] = <
 			language = <[ISO_639-1::es-ar]>
 			purpose = <"El registro de una condición o estado del individuo que es clínicamente significativa y única o idiosincrática para con este individuo, y que se considera información vital al momento de la toma de decisiones.">
@@ -116,6 +104,27 @@ Los ejemplos de afecciones que ameritan la creación de una precaución incluyen
 			misuse = <"*Not to be used to record a clinical intervention (including, but not limited to, use of a treatment or performance of a test or procedure) that should not be carried out due to the likelihood, or possibility, of harm being caused to an individual. Use the EVALUATION.contraindication for this purpose.
 
 Not to be used to record decisions about limitations on the individuals care or future interventions or the individuals preferences of future medical treatment and care. Use EVALUATION.advance_intervention_decisions and EVALUATION.advance_care_directive respectively for this purpose. (en)">
+		>
+		["nb"] = <
+			language = <[ISO_639-1::nb]>
+			purpose = <"For å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutninger om behandling.">
+			keywords = <"forsiktighetshensyn","forhindre","unngå","uønsket hendelse","forebygging","forsiktighet","advarsel","varsel">
+			use = <"Brukes for å registrere en klinisk tilstand eller status som er unik eller særegen for et individ, og som regnes som viktig informasjon i forbindelse med beslutning om behandling.
+
+Denne arketypen bør regnes som en viktig arketype for beslutningsstøttesystemer i forbindelse med forordning av nye kliniske intervensjoner.
+
+Eksempler på tilstander som kan være grunnlag for å registrere forholdsregler kan være:
+- Immunhemmende/-modulerende behandling - knyttet til en ordinasjon av kjemoterapi eller steroider, eller en leukemidiagnose
+- Nyresvikt - knyttet til nyrefunksjonstester eller en formell nyresviktdiagnose.
+- Står i transplantasjonskø
+- Pågående regelmessig behandling, som strålebehandling eller dialyse
+- Har fått transplantert et organ eller implantert metall i kroppen.
+- Pågående utredning/oppfølging av mistenkt eller verifisert malign lidelse.
+- Deltagelse i klinisk studie.
+- Står på blodfortynnende behandling.">
+			misuse = <"Skal ikke brukes for å registrere en klinisk intervensjon (f.eks. en undersøkelse eller behandling) som ikke må utføres på grunn av sannsynligheten eller muligheten for skade på individet. Bruk EVALUATION.contraindication (Norsk: Kontraindikasjon) for dette formålet.
+
+Skal ikke brukes for beslutninger om avgrensing av behandling eller fremtidige intervensjoner, eller for å registrere individets preferanser om fremtidig behandling og omsorg. Bruk henholdsvis EVALUATION.advance_intervention_decisions (Behandlingsbegrensning) og EVALUATION.advance_care_directive (Fremtidig behandlingsvalg) for dette formålet.">
 		>
 		["pt-br"] = <
 			language = <[ISO_639-1::pt-br]>
@@ -169,7 +178,7 @@ Not to be used to record decisions about limitations on the individuals care or 
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"1F847D0C7A85E138BBBDEA568702B601">
+		["MD5-CAM-1.0.1"] = <"8db4e9c63171a248cc17be44a8109253">
 		["build_uid"] = <"504c8b10-ac7b-446d-8e1b-2efcc0d0828b">
 		["revision"] = <"1.1.0">
 	>
@@ -655,6 +664,87 @@ ontology
 					text = <"*Additional details(en)">
 					description = <"*Additional structured details about the precaution.(en)">
 					comment = <"*For example: clinical evidence supporting the precaution.(en)">
+				>
+			>
+		>
+		["de"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Precaution (en)">
+					description = <"*A condition or state of the individual that is clinically significant and unique or idiosyncratic for this individual, and is considered vital information when making treatment decisions. (en)">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"*Condition (en)">
+					description = <"*Identification, by name, of a condition or state. (en)">
+					comment = <"*Coding of the identified 'Condition' with a terminology is desirable, where possible. (en)">
+				>
+				["at0003"] = <
+					text = <"*Evidence (en)">
+					description = <"*Description of the evidence identified to support the precaution. (en)">
+					comment = <"*This data element can be optionally linked to a diagnosis, test result, medication order etc via a URI (as per the Reference Model) in order to provide the rationale or evidence for the precaution assertion. Please note: as this URI link may not be accessible from a message or by receiving clinical system it is desirable that a narrative description of the evidence should also be explicitly recorded. (en)">
+				>
+				["at0004"] = <
+					text = <"*Last updated (en)">
+					description = <"*Date when the precaution information was last updated. (en)">
+				>
+				["at0006"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0008"] = <
+					text = <"*Comment (en)">
+					description = <"*Additional narrative about the precaution, not captured in other fields. (en)">
+				>
+				["at0009"] = <
+					text = <"*Review date (en)">
+					description = <"*Date when next due for review by a clinician. (en)">
+					comment = <"*In circumstances where precautions are not indefinite or life-long, use this data element to record the date/time when this precaution should be reassessed in the context of the clinical circumstances at the time. (en)">
+				>
+				["at0013"] = <
+					text = <"*Category (en)">
+					description = <"*Type of the 'Condition' identified. (en)">
+					comment = <"*This data element has been included because it is currently being captured in some clinical systems. This information could be derived when terminology codes are used to represent the condition in clinical systems, and is effectively redundant in that situation. (en)">
+				>
+				["at0014"] = <
+					text = <"*Status (en)">
+					description = <"*Assertion about the current state of the identified 'Precaution'. (en)">
+					comment = <"*Decision support would typically raise alerts for 'Active' and ignore a 'Resolved' or 'Refuted' precaution. Clinical systems may choose not to display Precaution entries with a 'Refuted' status in the Precaution list. However, 'Refuted' may be useful for reconciliation of the Precaution list or when communicating between systems. Some implementations may choose to make this field mandatory. 'Resolved' may be used variably across systems, depending on clinical use and context. The free text data type will allow for local variation by enabling other value sets to be applied to this data element in a template - in this situation it is recommended that values should be coded using a terminology. (en)">
+				>
+				["at0015"] = <
+					text = <"*Active (en)">
+					description = <"*The precaution is currently active. (en)">
+				>
+				["at0018"] = <
+					text = <"*Resolved (en)">
+					description = <"*The previously asserted precaution has been clinically reassessed and considered no longer to be an active risk. (en)">
+				>
+				["at0019"] = <
+					text = <"*Refuted (en)">
+					description = <"*The precaution has been clinically reassessed or has been disproved with a high level of clinical certainty by testing. (en)">
+				>
+				["at0020"] = <
+					text = <"*Extension (en)">
+					description = <"*Additional information required to capture local content or to align with other reference models/formalisms. (en)">
+					comment = <"*For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents. (en)">
+				>
+				["at0022"] = <
+					text = <"*Valid period start (en)">
+					description = <"*Date/time after which the 'Condition' is regarded as active. (en)">
+					comment = <"*This data element is intended for use when a precaution is identified to start at some time in the future. For example: the commencement date for a pharmaceutical trial. (en)">
+				>
+				["at0024"] = <
+					text = <"*Valid period end (en)">
+					description = <"*Date/time after which the 'Condition' is regarded as inactive. (en)">
+					comment = <"*This data element is intended for use when a precaution is known to have a definitive end date/time in the future. For example: the cessation date for a pharmaceutical trial. (en)">
+				>
+				["at0025"] = <
+					text = <"*Additional details (en)">
+					description = <"*Additional structured details about the precaution. (en)">
+					comment = <"*For example: clinical evidence supporting the precaution. (en)">
 				>
 			>
 		>
